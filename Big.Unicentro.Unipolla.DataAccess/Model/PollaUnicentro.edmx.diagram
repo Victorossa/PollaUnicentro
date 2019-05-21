@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="246727cc67004f72b467819b641273c8" Name="Diagram1" ZoomLevel="79">
+        <EntityTypeShape EntityType="dbUnicentroCRMModel.UC_CUSTOMER" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbUnicentroCRMModel.UC_EMPLOYEE" Width="1.5" PointX="0.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbUnicentroCRMModel.UNIPOLLA_CODES_WINNER" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <AssociationConnector Association="dbUnicentroCRMModel.fk_UNIPOLLA_CODES_WINNER_UC_CUSTOMER_ID_CLIENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="dbUnicentroCRMModel.fk_UNIPOLLA_CODES_WINNER_UC_EMPLOYEE_EMPLOYEE_ID" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="dbUnicentroCRMModel.UNIPOLLA_BET" Width="1.5" PointX="9.875" PointY="5.125" />
+        <EntityTypeShape EntityType="dbUnicentroCRMModel.UNIPOLLA_MATCH" Width="1.5" PointX="7.625" PointY="7.625" />
+        <EntityTypeShape EntityType="dbUnicentroCRMModel.UNIPOLLA_TEAM" Width="1.5" PointX="5.375" PointY="3.25" />
+        <AssociationConnector Association="dbUnicentroCRMModel.FK_UNIPOLLA_BET_UNIPOLLA_CODES_WINNER" />
+        <AssociationConnector Association="dbUnicentroCRMModel.FK_UNIPOLLA_BET_UNIPOLLA_MATCH" />
+        <AssociationConnector Association="dbUnicentroCRMModel.FK_UNIPOLLA_BET_UNIPOLLA_TEAM" />
+        <AssociationConnector Association="dbUnicentroCRMModel.FK_UNIPOLLA_BET_UNIPOLLA_TEAM1" />
+        <AssociationConnector Association="dbUnicentroCRMModel.FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM" />
+        <AssociationConnector Association="dbUnicentroCRMModel.FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM1" />
+        <AssociationConnector Association="dbUnicentroCRMModel.FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM2" />
+        <EntityTypeShape EntityType="dbUnicentroCRMModel.UNIPOLLA_CODES" Width="1.5" PointX="7.375" PointY="0.75" />
+        <EntityTypeShape EntityType="dbUnicentroCRMModel.UNIPOLLA_TOURNAMENT" Width="1.5" PointX="3.375" PointY="7.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

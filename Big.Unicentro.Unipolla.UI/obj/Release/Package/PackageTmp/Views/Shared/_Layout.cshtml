@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
+    @* @Styles.Render("~/Content/css")*@
+    @*@Scripts.Render("~/bundles/modernizr")*@
+    <!--build:css css/style.min.css-->
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/style.css")">
+
+    @Scripts.Render("~/bundles/jquery")
+    <!-- endbuild -->
+    <!-- <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script> -->
+    <style>
+        #spinner
+        {
+            display: none;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url(@Url.Content("~/Content/images/Loading.gif")) 50% 50% no-repeat #ede9df;
+            opacity: .7;
+        }
+    </style>
+</head>
+<body class="polla">
+    <div id="spinner">  </div>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Start Header -->
+    <div class="wrapper-general">
+        <div class="wrapper">
+            <div class="contentBody">
+
+                <section class="polla">
+                    <div id="bracket">
+                        @RenderBody()
+                        @Html.Partial("_Footer")
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    @*@Scripts.Render("~/bundles/jquery")*@
+    @*@Scripts.Render("~/bundles/bootstrap")*@
+    @RenderSection("scripts", required: false)
+    <script src="@Url.Content("~/Content/js/develop.js")"></script>
+</body>
+</html>

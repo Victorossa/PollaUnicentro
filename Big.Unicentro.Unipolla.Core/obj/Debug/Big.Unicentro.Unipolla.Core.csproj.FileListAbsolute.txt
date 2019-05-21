@@ -1,0 +1,111 @@
+c:\users\jose david\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core3\bin\Debug\Big.Unicentro.Unipolla.Core3.dll
+c:\users\jose david\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core3\bin\Debug\Big.Unicentro.Unipolla.Core3.pdb
+c:\users\jose david\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core3\obj\Debug\Big.Unicentro.Unipolla.Core.csprojResolveAssemblyReference.cache
+c:\users\jose david\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core3\obj\Debug\Big.Unicentro.Unipolla.Core.csproj.CoreCompileInputs.cache
+c:\users\jose david\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core3\obj\Debug\Big.Unicentro.Unipolla.Core3.dll
+c:\users\jose david\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core3\obj\Debug\Big.Unicentro.Unipolla.Core3.pdb
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Big.Unicentro.Unipolla.Core.dll
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Big.Unicentro.Unipolla.Core.pdb
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Big.Unicentro.Unipolla.DataAccess.dll
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\NLog.dll
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\EntityFramework.dll
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.Mvc.dll
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.Razor.dll
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.WebPages.dll
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Big.Unicentro.Unipolla.DataAccess.pdb
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Big.Unicentro.Unipolla.DataAccess.dll.config
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\EntityFramework.xml
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.Mvc.xml
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.Razor.xml
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.WebPages.xml
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\obj\Debug\Big.Unicentro.Unipolla.Core.csprojResolveAssemblyReference.cache
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\obj\Debug\Big.Unicentro.Unipolla.Core.csproj.CoreCompileInputs.cache
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\obj\Debug\Big.Unicentro.Unipolla.Core.csproj.CopyComplete
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\obj\Debug\Big.Unicentro.Unipolla.Core.dll
+C:\Users\Jose David\source\repos\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\obj\Debug\Big.Unicentro.Unipolla.Core.pdb
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Big.Unicentro.Unipolla.Core.dll
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Big.Unicentro.Unipolla.Core.pdb
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Big.Unicentro.Unipolla.DataAccess.dll
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\NLog.dll
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\EntityFramework.dll
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.Mvc.dll
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.Razor.dll
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.WebPages.Razor.dll
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.WebPages.dll
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Big.Unicentro.Unipolla.DataAccess.pdb
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Big.Unicentro.Unipolla.DataAccess.dll.config
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\EntityFramework.xml
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.Mvc.xml
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.Razor.xml
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.WebPages.Razor.xml
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.WebPages.xml
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Microsoft.Web.Infrastructure.xml
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\es\System.Web.Mvc.resources.dll
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\es\System.Web.Razor.resources.dll
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\es\System.Web.WebPages.Razor.resources.dll
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\es\System.Web.WebPages.resources.dll
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\es\System.Web.WebPages.Deployment.resources.dll
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\obj\Debug\Big.Unicentro.Unipolla.Core.csprojAssemblyReference.cache
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\obj\Debug\Big.Unicentro.Unipolla.Core.csproj.CoreCompileInputs.cache
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\obj\Debug\Big.Unicentro.Unipolla.Core.csproj.CopyComplete
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\obj\Debug\Big.Unicentro.Unipolla.Core.dll
+E:\TFSBIG\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\obj\Debug\Big.Unicentro.Unipolla.Core.pdb
+C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\obj\Debug\Big.Unicentro.Unipolla.Core.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Big.Unicentro.Unipolla.Core.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Big.Unicentro.Unipolla.Core.pdb
+C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Big.Unicentro.Unipolla.DataAccess.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\NLog.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\EntityFramework.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.Mvc.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.Razor.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.WebPages.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Big.Unicentro.Unipolla.DataAccess.pdb
+C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Big.Unicentro.Unipolla.DataAccess.dll.config
+C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\EntityFramework.xml
+C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\obj\Debug\Big.Unicentro.Unipolla.Core.csprojAssemblyReference.cache
+C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\obj\Debug\Big.Unicentro.Unipolla.Core.csproj.CopyComplete
+C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\obj\Debug\Big.Unicentro.Unipolla.Core.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\obj\Debug\Big.Unicentro.Unipolla.Core.pdb
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Big.Unicentro.Unipolla.Core.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Big.Unicentro.Unipolla.Core.pdb
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Big.Unicentro.Unipolla.DataAccess.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\NLog.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\EntityFramework.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.Mvc.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.Razor.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.WebPages.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Big.Unicentro.Unipolla.DataAccess.pdb
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Big.Unicentro.Unipolla.DataAccess.dll.config
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\EntityFramework.xml
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.Mvc.xml
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.Razor.xml
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.WebPages.xml
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\es\System.Web.Mvc.resources.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\es\System.Web.Razor.resources.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\es\System.Web.WebPages.resources.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\bin\Debug\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\obj\Debug\Big.Unicentro.Unipolla.Core.csprojAssemblyReference.cache
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\obj\Debug\Big.Unicentro.Unipolla.Core.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\obj\Debug\Big.Unicentro.Unipolla.Core.csproj.CopyComplete
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\obj\Debug\Big.Unicentro.Unipolla.Core.dll
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.Core\obj\Debug\Big.Unicentro.Unipolla.Core.pdb

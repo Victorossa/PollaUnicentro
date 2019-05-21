@@ -1,0 +1,152 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta property="og:url" content="http://www.misitio.html" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Polla mundiaista unicentro medellin" />
+<meta property="og:description" content="participa en la polla mundialista de unicentro medellin" /> <meta property="og:image" content="*http://misitio.com/Content/images/fotocuadradax*.jpg" />
+<html>
+<head>
+
+    <script language="javascript" type="text/javascript">
+
+        function Solo_Numerico(variable) {
+            Numer = parseInt(variable);
+            if (isNaN(Numer)) {
+                return "";
+            }
+            return Numer;
+        }
+        function ValNumero(Control) {
+            Control.value = Solo_Numerico(Control.value);
+        }
+    </script>
+
+    <title>Polla Unicentro Medellin</title>
+
+</head>
+<body>
+    <style type="text/css">
+        #spinner
+        {
+            display: none;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url(@Url.Content("~/Content/images/Loading.gif")) 50% 50% no-repeat #ede9df;
+            opacity: .7;
+        }
+        body {
+            background-size: cover;
+            background-color: #0B091F;
+        }
+
+        #contenedor {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(@Url.Content("~/Content/images/bg.jpg"));
+            background-repeat: no-repeat;
+                        background-size: 100% 100%;
+                    }
+
+        .botonIngresar {
+            width: 200px;
+            height: 55px;
+            position: absolute;
+            background-image: url(@Url.Content("~/Content/images/btn.png"));
+                    right: 0;
+            top: 74%;
+            left: 0;
+            margin: auto;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        .footer {
+            width: 593px;
+            height: 328px;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            background-image: url(@Url.Content("~/Content/images/footer.png"));
+            z-index: 0;
+            }
+
+        .elementos {
+            width: 960px;
+            height: 980px;
+            position: absolute;
+            margin: auto;
+            right: 0px;
+            left: 0px;
+        }
+
+        .imgcapmana {
+            width: 554px;
+            height: 552px;
+            position: absolute;
+            background-image: url(@Url.Content("~/Content/images/img.png"));
+            left: 30px;
+            top: 40px;
+        }
+
+        .formulario {
+            position: absolute;
+            width: 320px;
+            height: 260px;
+            display: block;
+            float: left;
+            top: 20%;
+            left: 64%;
+            z-index: 999;
+        }
+
+        .logo {
+            width: 90px;
+            height: 77px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-image: url(@Url.Content("~/Content/images/logo.png"));
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        input {
+            width: 90%;
+            height: 32px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+<div id="spinner">  </div>
+    <div id="contenedor">
+        <div class="logo"></div>
+        <div class="elementos">
+            <div class="imgcapmana"></div>
+            <div class="formulario">
+                <form>
+                    <br>
+                    <input id="txtDocument" type=text name=Cedula placeholder="Ingresa tu número de cédula" onkeyUp="return ValNumero(this);">
+                    <input id="txtCode" type=text name=Codigo placeholder="Ingresa tu código" >
+                </form>
+                <br>
+                <a target="_blank" href="@Url.Action("terminos_condiciones")">*Ver t&eacute;rminos y condiciones</a>
+                <div id="btnEnviar" class="botonIngresar"></div>
+            </div>
+        </div>
+    </div>
+<div class="footer"></div>
+@Scripts.Render("~/bundles/jquery")
+<script src="@Url.Content("~/Content/js/develop.js")"></script>
+<script src="@Url.Content("~/Content/js/develop_login.js")"></script>
+</body>
+</html>

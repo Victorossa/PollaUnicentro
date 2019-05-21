@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbUnicentroCRMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="UC_CUSTOMER">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="GUID" Type="String" MaxLength="36" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDENTIFICATION_TYPE_ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDENTIFICATION_NUMBER" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ACCEPTANCE_NUMBER" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="GENRE_ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="NAME_1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NAME_2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_NAME_1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_NAME_2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PHONE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MARITAL_STATUS_ID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="BORN_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ADDRESS" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="70" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="OCCUPATION_ID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="PROFESSION_ID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="MOBILE_PHONE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="HOBBY_ID" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="PET_ID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CUSTOMER_SEGMENTATION_ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ALLOW_SEND_INFO_EMAIL" Type="Boolean" />
+    <Property Name="ALLOW_SEND_INFO_ADDRESS" Type="Boolean" />
+    <Property Name="ALLOW_SEND_INFO_MOBILE" Type="Boolean" />
+    <Property Name="REGISTER_DATE" Type="DateTime" Precision="3" />
+    <Property Name="LAST_UPDATE" Type="DateTime" Precision="3" />
+    <Property Name="IS_ACTIVE" Type="Boolean" />
+    <Property Name="IS_BANNED" Type="Boolean" />
+    <Property Name="NEIGHBORHOOD_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="HAS_CHILDREN" Type="Boolean" />
+    <Property Name="ADDITIONAL_ADDRESS_INFO" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="UNIPOLLA_CODES_WINNER" Relationship="Self.fk_UNIPOLLA_CODES_WINNER_UC_CUSTOMER_ID_CLIENTE" FromRole="UC_CUSTOMER" ToRole="UNIPOLLA_CODES_WINNER" />
+  </EntityType>
+  <EntityType Name="UC_EMPLOYEE">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="GUID" Type="String" MaxLength="36" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDENTIFICATION_TYPE_ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDENTIFICATION_NUMBER" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ACCEPTANCE_NUMBER" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GENRE_ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="NAME_1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NAME_2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_NAME_1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_NAME_2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PHONE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MARITAL_STATUS_ID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="BORN_DATE" Type="DateTime" Precision="3" />
+    <Property Name="ADDRESS" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="BUSINESS_ID" Type="String" MaxLength="36" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ADMISSION_DATE" Type="DateTime" Precision="3" />
+    <Property Name="WORK_WEEKEND" Type="Boolean" Nullable="false" />
+    <Property Name="CHARGE_ID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="USERNAME" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="PASSWORD" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="REGISTER_DATE" Type="DateTime" Precision="3" />
+    <Property Name="LAST_UPDATE" Type="DateTime" Precision="3" />
+    <Property Name="IS_ACTIVE" Type="Boolean" Nullable="false" />
+    <Property Name="NEIGHBORHOOD_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DATE_IN_UNICENTRO" Type="DateTime" Precision="3" />
+    <Property Name="ADDITIONAL_ADDRESS_INFO" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="HAS_CHILDREN" Type="Boolean" />
+    <NavigationProperty Name="UNIPOLLA_CODES_WINNER" Relationship="Self.fk_UNIPOLLA_CODES_WINNER_UC_EMPLOYEE_EMPLOYEE_ID" FromRole="UC_EMPLOYEE" ToRole="UNIPOLLA_CODES_WINNER" />
+  </EntityType>
+  <EntityType Name="UNIPOLLA_CODES">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="GUID" Type="String" MaxLength="36" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ACTIVE" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UNIPOLLA_CODES_WINNER">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="GUID" Type="String" MaxLength="36" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_EVENT" Type="String" MaxLength="36" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_CLIENTE" Type="String" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Name="REGISTER_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IS_ACTIVE" Type="Boolean" Nullable="false" />
+    <Property Name="CODE_ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="EMPLOYEE_ID" Type="String" MaxLength="36" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="UC_CUSTOMER" Relationship="Self.fk_UNIPOLLA_CODES_WINNER_UC_CUSTOMER_ID_CLIENTE" FromRole="UNIPOLLA_CODES_WINNER" ToRole="UC_CUSTOMER" />
+    <NavigationProperty Name="UC_EMPLOYEE" Relationship="Self.fk_UNIPOLLA_CODES_WINNER_UC_EMPLOYEE_EMPLOYEE_ID" FromRole="UNIPOLLA_CODES_WINNER" ToRole="UC_EMPLOYEE" />
+    <NavigationProperty Name="UNIPOLLA_BET" Relationship="dbUnicentroCRMModel.FK_UNIPOLLA_BET_UNIPOLLA_CODES_WINNER" FromRole="UNIPOLLA_CODES_WINNER" ToRole="UNIPOLLA_BET" />
+  </EntityType>
+  <Association Name="fk_UNIPOLLA_CODES_WINNER_UC_CUSTOMER_ID_CLIENTE">
+    <End Role="UC_CUSTOMER" Type="Self.UC_CUSTOMER" Multiplicity="0..1" />
+    <End Role="UNIPOLLA_CODES_WINNER" Type="Self.UNIPOLLA_CODES_WINNER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UC_CUSTOMER">
+        <PropertyRef Name="GUID" />
+      </Principal>
+      <Dependent Role="UNIPOLLA_CODES_WINNER">
+        <PropertyRef Name="ID_CLIENTE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_UNIPOLLA_CODES_WINNER_UC_EMPLOYEE_EMPLOYEE_ID">
+    <End Role="UC_EMPLOYEE" Type="Self.UC_EMPLOYEE" Multiplicity="0..1" />
+    <End Role="UNIPOLLA_CODES_WINNER" Type="Self.UNIPOLLA_CODES_WINNER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UC_EMPLOYEE">
+        <PropertyRef Name="GUID" />
+      </Principal>
+      <Dependent Role="UNIPOLLA_CODES_WINNER">
+        <PropertyRef Name="EMPLOYEE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="dbUnicentroCRMEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="UC_CUSTOMER" EntityType="Self.UC_CUSTOMER" />
+    <EntitySet Name="UC_EMPLOYEE" EntityType="Self.UC_EMPLOYEE" />
+    <EntitySet Name="UNIPOLLA_CODES" EntityType="Self.UNIPOLLA_CODES" />
+    <EntitySet Name="UNIPOLLA_CODES_WINNER" EntityType="Self.UNIPOLLA_CODES_WINNER" />
+    <AssociationSet Name="fk_UNIPOLLA_CODES_WINNER_UC_CUSTOMER_ID_CLIENTE" Association="Self.fk_UNIPOLLA_CODES_WINNER_UC_CUSTOMER_ID_CLIENTE">
+      <End Role="UC_CUSTOMER" EntitySet="UC_CUSTOMER" />
+      <End Role="UNIPOLLA_CODES_WINNER" EntitySet="UNIPOLLA_CODES_WINNER" />
+    </AssociationSet>
+    <AssociationSet Name="fk_UNIPOLLA_CODES_WINNER_UC_EMPLOYEE_EMPLOYEE_ID" Association="Self.fk_UNIPOLLA_CODES_WINNER_UC_EMPLOYEE_EMPLOYEE_ID">
+      <End Role="UC_EMPLOYEE" EntitySet="UC_EMPLOYEE" />
+      <End Role="UNIPOLLA_CODES_WINNER" EntitySet="UNIPOLLA_CODES_WINNER" />
+    </AssociationSet>
+    <EntitySet Name="UNIPOLLA_BET" EntityType="dbUnicentroCRMModel.UNIPOLLA_BET" />
+    <EntitySet Name="UNIPOLLA_MATCH" EntityType="dbUnicentroCRMModel.UNIPOLLA_MATCH" />
+    <EntitySet Name="UNIPOLLA_TEAM" EntityType="dbUnicentroCRMModel.UNIPOLLA_TEAM" />
+    <AssociationSet Name="FK_UNIPOLLA_BET_UNIPOLLA_CODES_WINNER" Association="dbUnicentroCRMModel.FK_UNIPOLLA_BET_UNIPOLLA_CODES_WINNER">
+      <End Role="UNIPOLLA_CODES_WINNER" EntitySet="UNIPOLLA_CODES_WINNER" />
+      <End Role="UNIPOLLA_BET" EntitySet="UNIPOLLA_BET" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UNIPOLLA_BET_UNIPOLLA_MATCH" Association="dbUnicentroCRMModel.FK_UNIPOLLA_BET_UNIPOLLA_MATCH">
+      <End Role="UNIPOLLA_MATCH" EntitySet="UNIPOLLA_MATCH" />
+      <End Role="UNIPOLLA_BET" EntitySet="UNIPOLLA_BET" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UNIPOLLA_BET_UNIPOLLA_TEAM" Association="dbUnicentroCRMModel.FK_UNIPOLLA_BET_UNIPOLLA_TEAM">
+      <End Role="UNIPOLLA_TEAM" EntitySet="UNIPOLLA_TEAM" />
+      <End Role="UNIPOLLA_BET" EntitySet="UNIPOLLA_BET" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UNIPOLLA_BET_UNIPOLLA_TEAM1" Association="dbUnicentroCRMModel.FK_UNIPOLLA_BET_UNIPOLLA_TEAM1">
+      <End Role="UNIPOLLA_TEAM" EntitySet="UNIPOLLA_TEAM" />
+      <End Role="UNIPOLLA_BET" EntitySet="UNIPOLLA_BET" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM" Association="dbUnicentroCRMModel.FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM">
+      <End Role="UNIPOLLA_TEAM" EntitySet="UNIPOLLA_TEAM" />
+      <End Role="UNIPOLLA_MATCH" EntitySet="UNIPOLLA_MATCH" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM1" Association="dbUnicentroCRMModel.FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM1">
+      <End Role="UNIPOLLA_TEAM" EntitySet="UNIPOLLA_TEAM" />
+      <End Role="UNIPOLLA_MATCH" EntitySet="UNIPOLLA_MATCH" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM2" Association="dbUnicentroCRMModel.FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM2">
+      <End Role="UNIPOLLA_TEAM" EntitySet="UNIPOLLA_TEAM" />
+      <End Role="UNIPOLLA_MATCH" EntitySet="UNIPOLLA_MATCH" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="UNIPOLLA_BET">
+    <Key>
+      <PropertyRef Name="ID_BET" />
+    </Key>
+    <Property Name="ID_BET" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_CODES_WINNER" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Name="ID_MATCH" Type="Int32" Nullable="false" />
+    <Property Name="ID_TEAM_1" Type="Int32" Nullable="false" />
+    <Property Name="ID_TEAM_2" Type="Int32" Nullable="false" />
+    <Property Name="REGISTER_DATE_MATCH" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="POINTS_TEAM_1" Type="Int32" />
+    <Property Name="POINTS_TEAM_2" Type="Int32" />
+    <Property Name="REGISTER_DATE_POINTS" Type="Int32" />
+    <NavigationProperty Name="UNIPOLLA_CODES_WINNER" Relationship="dbUnicentroCRMModel.FK_UNIPOLLA_BET_UNIPOLLA_CODES_WINNER" FromRole="UNIPOLLA_BET" ToRole="UNIPOLLA_CODES_WINNER" />
+    <NavigationProperty Name="UNIPOLLA_MATCH" Relationship="dbUnicentroCRMModel.FK_UNIPOLLA_BET_UNIPOLLA_MATCH" FromRole="UNIPOLLA_BET" ToRole="UNIPOLLA_MATCH" />
+    <NavigationProperty Name="UNIPOLLA_TEAM" Relationship="dbUnicentroCRMModel.FK_UNIPOLLA_BET_UNIPOLLA_TEAM" FromRole="UNIPOLLA_BET" ToRole="UNIPOLLA_TEAM" />
+    <NavigationProperty Name="UNIPOLLA_TEAM1" Relationship="dbUnicentroCRMModel.FK_UNIPOLLA_BET_UNIPOLLA_TEAM1" FromRole="UNIPOLLA_BET" ToRole="UNIPOLLA_TEAM" />
+  </EntityType>
+  <EntityType Name="UNIPOLLA_MATCH">
+    <Key>
+      <PropertyRef Name="ID_MATCH" />
+    </Key>
+    <Property Name="ID_MATCH" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_TEAM_1" Type="Int32" />
+    <Property Name="ID_TEAM_2" Type="Int32" />
+    <Property Name="ID_WINNER_TEAM" Type="Int32" />
+    <Property Name="WINNER_POINTS" Type="Int32" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="UNIPOLLA_BET" Relationship="dbUnicentroCRMModel.FK_UNIPOLLA_BET_UNIPOLLA_MATCH" FromRole="UNIPOLLA_MATCH" ToRole="UNIPOLLA_BET" />
+    <NavigationProperty Name="UNIPOLLA_TEAM" Relationship="dbUnicentroCRMModel.FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM" FromRole="UNIPOLLA_MATCH" ToRole="UNIPOLLA_TEAM" />
+    <NavigationProperty Name="UNIPOLLA_TEAM1" Relationship="dbUnicentroCRMModel.FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM1" FromRole="UNIPOLLA_MATCH" ToRole="UNIPOLLA_TEAM" />
+    <NavigationProperty Name="UNIPOLLA_TEAM2" Relationship="dbUnicentroCRMModel.FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM2" FromRole="UNIPOLLA_MATCH" ToRole="UNIPOLLA_TEAM" />
+  </EntityType>
+  <EntityType Name="UNIPOLLA_TEAM">
+    <Key>
+      <PropertyRef Name="ID_TEAM" />
+    </Key>
+    <Property Name="ID_TEAM" Type="Int32" Nullable="false" />
+    <Property Name="NAME_TEAM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LOGO_TEAM" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="ABBREVIATION" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ACTIVE" Type="Boolean" />
+    <Property Name="GROUP_TEAM" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="UNIPOLLA_BET" Relationship="dbUnicentroCRMModel.FK_UNIPOLLA_BET_UNIPOLLA_TEAM" FromRole="UNIPOLLA_TEAM" ToRole="UNIPOLLA_BET" />
+    <NavigationProperty Name="UNIPOLLA_BET1" Relationship="dbUnicentroCRMModel.FK_UNIPOLLA_BET_UNIPOLLA_TEAM1" FromRole="UNIPOLLA_TEAM" ToRole="UNIPOLLA_BET" />
+    <NavigationProperty Name="UNIPOLLA_MATCH" Relationship="dbUnicentroCRMModel.FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM" FromRole="UNIPOLLA_TEAM" ToRole="UNIPOLLA_MATCH" />
+    <NavigationProperty Name="UNIPOLLA_MATCH1" Relationship="dbUnicentroCRMModel.FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM1" FromRole="UNIPOLLA_TEAM" ToRole="UNIPOLLA_MATCH" />
+    <NavigationProperty Name="UNIPOLLA_MATCH2" Relationship="dbUnicentroCRMModel.FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM2" FromRole="UNIPOLLA_TEAM" ToRole="UNIPOLLA_MATCH" />
+  </EntityType>
+  <Association Name="FK_UNIPOLLA_BET_UNIPOLLA_CODES_WINNER">
+    <End Type="dbUnicentroCRMModel.UNIPOLLA_CODES_WINNER" Role="UNIPOLLA_CODES_WINNER" Multiplicity="1" />
+    <End Type="dbUnicentroCRMModel.UNIPOLLA_BET" Role="UNIPOLLA_BET" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UNIPOLLA_CODES_WINNER">
+        <PropertyRef Name="GUID" />
+      </Principal>
+      <Dependent Role="UNIPOLLA_BET">
+        <PropertyRef Name="ID_CODES_WINNER" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UNIPOLLA_BET_UNIPOLLA_MATCH">
+    <End Type="dbUnicentroCRMModel.UNIPOLLA_MATCH" Role="UNIPOLLA_MATCH" Multiplicity="1" />
+    <End Type="dbUnicentroCRMModel.UNIPOLLA_BET" Role="UNIPOLLA_BET" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UNIPOLLA_MATCH">
+        <PropertyRef Name="ID_MATCH" />
+      </Principal>
+      <Dependent Role="UNIPOLLA_BET">
+        <PropertyRef Name="ID_MATCH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UNIPOLLA_BET_UNIPOLLA_TEAM">
+    <End Type="dbUnicentroCRMModel.UNIPOLLA_TEAM" Role="UNIPOLLA_TEAM" Multiplicity="1" />
+    <End Type="dbUnicentroCRMModel.UNIPOLLA_BET" Role="UNIPOLLA_BET" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UNIPOLLA_TEAM">
+        <PropertyRef Name="ID_TEAM" />
+      </Principal>
+      <Dependent Role="UNIPOLLA_BET">
+        <PropertyRef Name="ID_TEAM_1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UNIPOLLA_BET_UNIPOLLA_TEAM1">
+    <End Type="dbUnicentroCRMModel.UNIPOLLA_TEAM" Role="UNIPOLLA_TEAM" Multiplicity="1" />
+    <End Type="dbUnicentroCRMModel.UNIPOLLA_BET" Role="UNIPOLLA_BET" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UNIPOLLA_TEAM">
+        <PropertyRef Name="ID_TEAM" />
+      </Principal>
+      <Dependent Role="UNIPOLLA_BET">
+        <PropertyRef Name="ID_TEAM_2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM">
+    <End Type="dbUnicentroCRMModel.UNIPOLLA_TEAM" Role="UNIPOLLA_TEAM" Multiplicity="0..1" />
+    <End Type="dbUnicentroCRMModel.UNIPOLLA_MATCH" Role="UNIPOLLA_MATCH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UNIPOLLA_TEAM">
+        <PropertyRef Name="ID_TEAM" />
+      </Principal>
+      <Dependent Role="UNIPOLLA_MATCH">
+        <PropertyRef Name="ID_TEAM_1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM1">
+    <End Type="dbUnicentroCRMModel.UNIPOLLA_TEAM" Role="UNIPOLLA_TEAM" Multiplicity="0..1" />
+    <End Type="dbUnicentroCRMModel.UNIPOLLA_MATCH" Role="UNIPOLLA_MATCH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UNIPOLLA_TEAM">
+        <PropertyRef Name="ID_TEAM" />
+      </Principal>
+      <Dependent Role="UNIPOLLA_MATCH">
+        <PropertyRef Name="ID_TEAM_2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM2">
+    <End Type="dbUnicentroCRMModel.UNIPOLLA_TEAM" Role="UNIPOLLA_TEAM" Multiplicity="0..1" />
+    <End Type="dbUnicentroCRMModel.UNIPOLLA_MATCH" Role="UNIPOLLA_MATCH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UNIPOLLA_TEAM">
+        <PropertyRef Name="ID_TEAM" />
+      </Principal>
+      <Dependent Role="UNIPOLLA_MATCH">
+        <PropertyRef Name="ID_WINNER_TEAM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

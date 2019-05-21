@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbUnicentroCRMModelStoreContainer" CdmEntityContainer="dbUnicentroCRMEntities">
+    <EntitySetMapping Name="UC_CUSTOMER">
+      <EntityTypeMapping TypeName="dbUnicentroCRMModel.UC_CUSTOMER">
+        <MappingFragment StoreEntitySet="UC_CUSTOMER">
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDENTIFICATION_TYPE_ID" ColumnName="IDENTIFICATION_TYPE_ID" />
+          <ScalarProperty Name="IDENTIFICATION_NUMBER" ColumnName="IDENTIFICATION_NUMBER" />
+          <ScalarProperty Name="ACCEPTANCE_NUMBER" ColumnName="ACCEPTANCE_NUMBER" />
+          <ScalarProperty Name="GENRE_ID" ColumnName="GENRE_ID" />
+          <ScalarProperty Name="NAME_1" ColumnName="NAME_1" />
+          <ScalarProperty Name="NAME_2" ColumnName="NAME_2" />
+          <ScalarProperty Name="LAST_NAME_1" ColumnName="LAST_NAME_1" />
+          <ScalarProperty Name="LAST_NAME_2" ColumnName="LAST_NAME_2" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="MARITAL_STATUS_ID" ColumnName="MARITAL_STATUS_ID" />
+          <ScalarProperty Name="BORN_DATE" ColumnName="BORN_DATE" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="OCCUPATION_ID" ColumnName="OCCUPATION_ID" />
+          <ScalarProperty Name="PROFESSION_ID" ColumnName="PROFESSION_ID" />
+          <ScalarProperty Name="MOBILE_PHONE" ColumnName="MOBILE_PHONE" />
+          <ScalarProperty Name="HOBBY_ID" ColumnName="HOBBY_ID" />
+          <ScalarProperty Name="PET_ID" ColumnName="PET_ID" />
+          <ScalarProperty Name="CUSTOMER_SEGMENTATION_ID" ColumnName="CUSTOMER_SEGMENTATION_ID" />
+          <ScalarProperty Name="ALLOW_SEND_INFO_EMAIL" ColumnName="ALLOW_SEND_INFO_EMAIL" />
+          <ScalarProperty Name="ALLOW_SEND_INFO_ADDRESS" ColumnName="ALLOW_SEND_INFO_ADDRESS" />
+          <ScalarProperty Name="ALLOW_SEND_INFO_MOBILE" ColumnName="ALLOW_SEND_INFO_MOBILE" />
+          <ScalarProperty Name="REGISTER_DATE" ColumnName="REGISTER_DATE" />
+          <ScalarProperty Name="LAST_UPDATE" ColumnName="LAST_UPDATE" />
+          <ScalarProperty Name="IS_ACTIVE" ColumnName="IS_ACTIVE" />
+          <ScalarProperty Name="IS_BANNED" ColumnName="IS_BANNED" />
+          <ScalarProperty Name="NEIGHBORHOOD_ID" ColumnName="NEIGHBORHOOD_ID" />
+          <ScalarProperty Name="HAS_CHILDREN" ColumnName="HAS_CHILDREN" />
+          <ScalarProperty Name="ADDITIONAL_ADDRESS_INFO" ColumnName="ADDITIONAL_ADDRESS_INFO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UC_EMPLOYEE">
+      <EntityTypeMapping TypeName="dbUnicentroCRMModel.UC_EMPLOYEE">
+        <MappingFragment StoreEntitySet="UC_EMPLOYEE">
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDENTIFICATION_TYPE_ID" ColumnName="IDENTIFICATION_TYPE_ID" />
+          <ScalarProperty Name="IDENTIFICATION_NUMBER" ColumnName="IDENTIFICATION_NUMBER" />
+          <ScalarProperty Name="ACCEPTANCE_NUMBER" ColumnName="ACCEPTANCE_NUMBER" />
+          <ScalarProperty Name="GENRE_ID" ColumnName="GENRE_ID" />
+          <ScalarProperty Name="NAME_1" ColumnName="NAME_1" />
+          <ScalarProperty Name="NAME_2" ColumnName="NAME_2" />
+          <ScalarProperty Name="LAST_NAME_1" ColumnName="LAST_NAME_1" />
+          <ScalarProperty Name="LAST_NAME_2" ColumnName="LAST_NAME_2" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="MARITAL_STATUS_ID" ColumnName="MARITAL_STATUS_ID" />
+          <ScalarProperty Name="BORN_DATE" ColumnName="BORN_DATE" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="BUSINESS_ID" ColumnName="BUSINESS_ID" />
+          <ScalarProperty Name="ADMISSION_DATE" ColumnName="ADMISSION_DATE" />
+          <ScalarProperty Name="WORK_WEEKEND" ColumnName="WORK_WEEKEND" />
+          <ScalarProperty Name="CHARGE_ID" ColumnName="CHARGE_ID" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="REGISTER_DATE" ColumnName="REGISTER_DATE" />
+          <ScalarProperty Name="LAST_UPDATE" ColumnName="LAST_UPDATE" />
+          <ScalarProperty Name="IS_ACTIVE" ColumnName="IS_ACTIVE" />
+          <ScalarProperty Name="NEIGHBORHOOD_ID" ColumnName="NEIGHBORHOOD_ID" />
+          <ScalarProperty Name="DATE_IN_UNICENTRO" ColumnName="DATE_IN_UNICENTRO" />
+          <ScalarProperty Name="ADDITIONAL_ADDRESS_INFO" ColumnName="ADDITIONAL_ADDRESS_INFO" />
+          <ScalarProperty Name="HAS_CHILDREN" ColumnName="HAS_CHILDREN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UNIPOLLA_CODES_WINNER">
+      <EntityTypeMapping TypeName="dbUnicentroCRMModel.UNIPOLLA_CODES_WINNER">
+        <MappingFragment StoreEntitySet="UNIPOLLA_CODES_WINNER">
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_EVENT" ColumnName="ID_EVENT" />
+          <ScalarProperty Name="ID_CLIENTE" ColumnName="ID_CLIENTE" />
+          <ScalarProperty Name="REGISTER_DATE" ColumnName="REGISTER_DATE" />
+          <ScalarProperty Name="IS_ACTIVE" ColumnName="IS_ACTIVE" />
+          <ScalarProperty Name="CODE_ID" ColumnName="CODE_ID" />
+          <ScalarProperty Name="EMPLOYEE_ID" ColumnName="EMPLOYEE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UNIPOLLA_BET">
+      <EntityTypeMapping TypeName="dbUnicentroCRMModel.UNIPOLLA_BET">
+        <MappingFragment StoreEntitySet="UNIPOLLA_BET">
+          <ScalarProperty Name="REGISTER_DATE_POINTS" ColumnName="REGISTER_DATE_POINTS" />
+          <ScalarProperty Name="POINTS_TEAM_2" ColumnName="POINTS_TEAM_2" />
+          <ScalarProperty Name="POINTS_TEAM_1" ColumnName="POINTS_TEAM_1" />
+          <ScalarProperty Name="REGISTER_DATE_MATCH" ColumnName="REGISTER_DATE_MATCH" />
+          <ScalarProperty Name="ID_TEAM_2" ColumnName="ID_TEAM_2" />
+          <ScalarProperty Name="ID_TEAM_1" ColumnName="ID_TEAM_1" />
+          <ScalarProperty Name="ID_MATCH" ColumnName="ID_MATCH" />
+          <ScalarProperty Name="ID_CODES_WINNER" ColumnName="ID_CODES_WINNER" />
+          <ScalarProperty Name="ID_BET" ColumnName="ID_BET" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UNIPOLLA_MATCH">
+      <EntityTypeMapping TypeName="dbUnicentroCRMModel.UNIPOLLA_MATCH">
+        <MappingFragment StoreEntitySet="UNIPOLLA_MATCH">
+          <ScalarProperty Name="ID_TOURNAMENT" ColumnName="ID_TOURNAMENT" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="WINNER_POINTS" ColumnName="WINNER_POINTS" />
+          <ScalarProperty Name="ID_WINNER_TEAM" ColumnName="ID_WINNER_TEAM" />
+          <ScalarProperty Name="ID_TEAM_2" ColumnName="ID_TEAM_2" />
+          <ScalarProperty Name="ID_TEAM_1" ColumnName="ID_TEAM_1" />
+          <ScalarProperty Name="ID_MATCH" ColumnName="ID_MATCH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UNIPOLLA_TEAM">
+      <EntityTypeMapping TypeName="dbUnicentroCRMModel.UNIPOLLA_TEAM">
+        <MappingFragment StoreEntitySet="UNIPOLLA_TEAM">
+          <ScalarProperty Name="GROUP_TEAM" ColumnName="GROUP_TEAM" />
+          <ScalarProperty Name="ACTIVE" ColumnName="ACTIVE" />
+          <ScalarProperty Name="ABBREVIATION" ColumnName="ABBREVIATION" />
+          <ScalarProperty Name="LOGO_TEAM" ColumnName="LOGO_TEAM" />
+          <ScalarProperty Name="NAME_TEAM" ColumnName="NAME_TEAM" />
+          <ScalarProperty Name="ID_TEAM" ColumnName="ID_TEAM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UNIPOLLA_CODES">
+      <EntityTypeMapping TypeName="dbUnicentroCRMModel.UNIPOLLA_CODES">
+        <MappingFragment StoreEntitySet="UNIPOLLA_CODES">
+          <ScalarProperty Name="ROL" ColumnName="ROL" />
+          <ScalarProperty Name="ACTIVE" ColumnName="ACTIVE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UNIPOLLA_TOURNAMENT">
+      <EntityTypeMapping TypeName="dbUnicentroCRMModel.UNIPOLLA_TOURNAMENT">
+        <MappingFragment StoreEntitySet="UNIPOLLA_TOURNAMENT">
+          <ScalarProperty Name="ACTIVE_TOURNAMENT" ColumnName="ACTIVE_TOURNAMENT" />
+          <ScalarProperty Name="REGISTRATION_DEADLINE" ColumnName="REGISTRATION_DEADLINE" />
+          <ScalarProperty Name="NAME_TOURNAMENT" ColumnName="NAME_TOURNAMENT" />
+          <ScalarProperty Name="ID_TOURNAMENT" ColumnName="ID_TOURNAMENT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

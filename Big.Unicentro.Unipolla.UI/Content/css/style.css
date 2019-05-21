@@ -1,0 +1,1776 @@
+/*@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+	$src: null;
+
+	$extmods: (
+		eot: "?",
+		svg: "#" + str-replace($name, " ", "_")
+	);
+
+	$formats: (
+		otf: "opentype",
+		ttf: "truetype"
+	);
+
+	@each $ext in $exts {
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+	}
+
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}*/
+/* ==========================================================================
+   Normalize.scss settings
+   ========================================================================== */
+/**
+ * Includes legacy browser support IE6/7
+ *
+ * Set to false if you want to drop support for IE6 and IE7
+ */
+/* Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *  `em` units.
+ */
+html {
+    font-family: sans-serif;
+    /* 1 */
+    -ms-text-size-adjust: 100%;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+    margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    /* 1 */
+    vertical-align: baseline;
+    /* 2 */
+}
+
+    /**
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+    audio:not([controls]) {
+        display: none;
+        height: 0;
+    }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+    display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+    background-color: transparent;
+}
+
+    /**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+    a:active, a:hover {
+        outline: 0;
+    }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Addresses styling not present in IE 8/9.
+ */
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * 1. Remove border when inside `a` element in IE 8/9/10.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+img {
+    border: 0;
+    max-width: 100%;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+    margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+    overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *  Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ * 4. Improves appearance and consistency in all browsers.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+    margin: 0;
+    /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+    overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *  and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *  `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *  Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    /* 2 */
+    cursor: pointer;
+    /* 3 */
+}
+
+    /**
+ * Re-set default cursor for disabled elements.
+ */
+    button[disabled],
+    html input[disabled] {
+        cursor: default;
+    }
+
+    /**
+ * Remove inner padding and border in Firefox 4+.
+ */
+    button::-moz-focus-inner,
+    input::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+    line-height: normal;
+}
+
+    /**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ *  Known issue: excess padding remains in IE 6.
+ */
+    input[type="checkbox"],
+    input[type="radio"] {
+        box-sizing: border-box;
+        /* 1 */
+        padding: 0;
+        /* 2 */
+    }
+
+    /**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        height: auto;
+    }
+
+    /**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+    input[type="search"] {
+        -webkit-appearance: textfield;
+        /* 1 */
+        box-sizing: content-box;
+        /* 2 */
+    }
+
+        /**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+        input[type="search"]::-webkit-search-cancel-button,
+        input[type="search"]::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 3. Corrects text not wrapping in Firefox 3.
+ * 4. Corrects alignment displayed oddly in IE 6/7.
+ */
+legend {
+    border: 0;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+    overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+    font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'alright_sansblack_italic';
+    src: url("../fonts/alrightsansblackitalic-webfont.woff2") format("woff2"), url("../fonts/alrightsansblackitalic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'alright_sansultra_italic';
+    src: url("../fonts/alrightsansultraitalic-webfont.woff2") format("woff2"), url("../fonts/alrightsansultraitalic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'alright_sansregular';
+    src: url("../fonts/alrightsansregular-webfont.woff2") format("woff2"), url("../fonts/alrightsansregular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'alright_sansmedium_italic';
+    src: url("../fonts/alrightsansmediumitalic-webfont.woff2") format("woff2"), url("../fonts/alrightsansmediumitalic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'alright_sansmedium';
+    src: url("../fonts/alrightsansmedium-webfont.woff2") format("woff2"), url("../fonts/alrightsansmedium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'alright_sansbold';
+    src: url("../fonts/alrightsansbold-webfont.woff2") format("woff2"), url("../fonts/alrightsansbold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*:focus {
+    outline: 0;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* *, *:before, *:after {
+	 -webkit-box-sizing: inherit;
+	 -moz-box-sizing: inherit;
+	 box-sizing: inherit;
+ }
+ */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'alright_sansregular',Arial, helvetica;
+    font-size: 16px;
+}
+
+html, body {
+    height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden],
+template {
+    display: none;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+    a:active, a:hover {
+        outline: 0;
+    }
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+img {
+    border: 0;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+figure {
+    margin: 0;
+}
+
+hr {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+select {
+    text-transform: none;
+}
+
+button {
+    overflow: visible;
+}
+
+button,
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+    button,
+    html input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+        -webkit-appearance: button;
+        cursor: pointer;
+    }
+
+        button[disabled],
+        html input[disabled] {
+            cursor: default;
+            opacity: .5;
+        }
+
+        button::-moz-focus-inner,
+        input::-moz-focus-inner {
+            border: 0;
+            padding: 0;
+        }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-right: 0.4375em;
+        padding: 0;
+    }
+
+/*Estilos personalizados*/
+#bracket {
+    overflow: hidden;
+    padding-top: 20px;
+    font-size: 12px;
+    /*padding: 40px 0 0;*/
+    margin: 40px;
+    /*border: 1px solid black;*/
+}
+
+.container {
+    max-width: 1500px;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+.split {
+    display: block;
+    float: left;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 42%;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+}
+
+.champion {
+    float: left;
+    display: block;
+    width: 25%;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-self: center;
+    align-self: center;
+    margin-top: -15px;
+    text-align: center;
+    padding: 230px 0\9;
+}
+
+    .champion i {
+        color: #a0a6a8;
+        font-size: 45px;
+        padding: 10px 0;
+    }
+
+.round {
+    display: block;
+    float: left;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 95%;
+    width: 30.8333%\9;
+}
+
+.split-one .round {
+    margin: 0 2.5% 0 0;
+    padding: 15px 0px;
+}
+
+.split-two .round {
+    margin: 0 0 0 2.5%;
+    padding: 15px 0px;
+}
+
+.matchup {
+    margin: 0;
+    width: 100%;
+    padding: 15px 5px;
+    /* height: 100px; */
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    text-align: center;
+    border-radius: 15px;
+    margin: 25px 0;
+    position: relative;
+}
+
+    .matchup.matchup-red {
+        background: url(../images/red.png) no-repeat center top;
+        background-size: cover;
+    }
+
+        .matchup.matchup-red .division-oct {
+            margin-bottom: 150px;
+        }
+
+    .matchup.matchup-blue {
+        background: url(../images/blue.png) no-repeat center top;
+        background-size: cover;
+    }
+
+.bttm {
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90px;
+}
+
+.top {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 100px;
+    width: 70%;
+    min-width: 60px;
+}
+
+    .top.blue {
+        background: url(../images/blue_top.png) no-repeat center top;
+        background-size: 100% 100%;
+    }
+
+    .top.yellow {
+        background: url(../images/yellow_top.png) no-repeat center top;
+        background-size: 100% 100%;
+    }
+
+        .top.yellow span {
+            color: #0e7ac1;
+        }
+
+    .top span {
+        color: white;
+        font-size: 15px;
+        height: 10px;
+    }
+
+.matchup .vs {
+    font-weight: bold;
+    color: #FEDA00;
+}
+
+.score {
+    font-size: 11px;
+    text-transform: uppercase;
+    float: right;
+    color: #2C7399;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+    position: absolute;
+    right: 5px;
+}
+
+.team {
+    padding: 0 5px;
+    margin: 3px 0;
+    height: 25px;
+    line-height: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.round-one, .round-three {
+    /*background-color: rgba(0, 0, 0, 0.2);*/
+    background: url("../images/bg_grey.png") no-repeat center center;
+    background-size: cover;
+}
+
+.round-two .matchup {
+    margin: 0;
+    /*height: 60px;*/
+    /*padding: 50px 0;*/
+    margin: 110px 0;
+}
+
+.round-three .matchup {
+    margin: 0;
+    /*height: 60px; */
+    /*padding: 130px 0;*/
+    margin: 270px 0;
+}
+
+.round-details {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 13px;
+    color: #FFF9C6;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    height: 40px;
+}
+
+.champion li, .round li {
+    background-color: #fff;
+    box-shadow: none;
+    opacity: 0.45;
+}
+
+.current li {
+    opacity: 1;
+}
+
+/*.current li.team {background-color: #fff;box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);opacity: 1;    text-align: left;}*/
+li.team {
+    background-color: transparent;
+    text-align: left;
+    opacity: 1;
+}
+
+    li.team .name {
+        background-color: #fff;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        width: 65%;
+        display: inline-block;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 10px;
+        padding-left: 5px;
+        border: 0;
+        line-height: 20px;
+        height: 25px;
+    }
+
+    li.team .score {
+        background-color: #fff;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        width: 30%;
+        display: inline-block;
+        margin-left: 5%;
+        text-align: center;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 10px;
+        border: 0;
+        line-height: 20px;
+        height: 25px;
+    }
+    li.team .name2 {
+        width: 55%;
+    }
+    li.team .score2 {
+        width: 25%;
+    }
+
+.vote-options {
+    display: block;
+    height: 52px;
+}
+
+.share .container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.share-icon {
+    font-size: 24px;
+    color: #fff;
+    padding: 25px;
+}
+
+.share-wrap {
+    max-width: 1100px;
+    text-align: center;
+    margin: 60px auto;
+}
+
+.final {
+    margin: 4.5em 0;
+}
+
+    .final .matchup {
+        background: url(../images/final.png) no-repeat center top;
+        background-size: 100% 100%;
+        height: 150px;
+        padding: 60px 5px;
+    }
+
+        .final .matchup .top {
+            top: 25px;
+        }
+
+        .final .matchup li.team {
+            display: inline-block;
+            width: 40%;
+            vertical-align: middle;
+        }
+
+        .final .matchup .vs {
+            display: inline-block;
+            vertical-align: middle;
+            width: 10%;
+            color: #0F7AC0;
+        }
+
+        .final .matchup .name-champ {
+            background-color: #fff;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            width: 75%;
+            display: inline-block;
+            border-radius: 8px;
+            padding-left: 10px;
+            border: 0;
+            margin-top: 5px;
+            line-height: 30px;
+            text-align: center;
+            font-size: 20px;
+            line-height: 25px;
+            height: 30px;
+        }
+
+.semifinal .matchup {
+    background: url(../images/semifinal.png) no-repeat center top;
+    background-size: 100% 100%;
+    height: 146px;
+    padding: 60px 5px;
+}
+
+    .semifinal .matchup .top {
+        top: 32px;
+    }
+
+    .semifinal .matchup li.team {
+        display: inline-block;
+        width: 40%;
+        vertical-align: middle;
+    }
+
+    .semifinal .matchup .vs {
+        display: inline-block;
+        vertical-align: middle;
+        width: 10%;
+        color: #0F7AC0;
+    }
+
+    .semifinal .matchup .name-champ {
+        background-color: #fff;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        width: 75%;
+        display: inline-block;
+        border-radius: 8px;
+        padding-left: 10px;
+        border: 0;
+        margin-top: 5px;
+        line-height: 25px;
+        text-align: center;
+        line-height: 20px;
+        height: 30px;
+    }
+
+.ct-cta {
+    margin-top: 50px;
+    text-align: center;
+}
+
+    .ct-cta .cta {
+        padding: 7px 40px;
+        background-color: #e42228;
+        line-height: 1em;
+        border-radius: 8px;
+        border: 2px solid white;
+        color: white;
+        font-size: 15px;
+    }
+
+.groups {
+    width: 100%;
+    font-size: 0;
+    margin-top: -20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    .groups .group {
+        background-color: white;
+        border-radius: 10px;
+        width: 12%;
+        margin: 0.25%;
+        font-size: 12px;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+        .groups .group .group-top {
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 5px 10px;
+        }
+
+            .groups .group .group-top p {
+                margin: 0;
+            }
+
+        .groups .group .group-teams {
+            text-align: center;
+            padding: 4px;
+        }
+
+            .groups .group .group-teams p {
+                margin: 0;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-weight: bold;
+            }
+
+        .groups .group.group-a {
+            border: 2px solid #EE2D2F;
+        }
+
+            .groups .group.group-a .group-top {
+                background-color: #EE2D2F;
+            }
+
+            .groups .group.group-a .group-teams p {
+                color: #EE2D2F;
+            }
+
+        .groups .group.group-b {
+            border: 2px solid #EE2A5A;
+        }
+
+            .groups .group.group-b .group-top {
+                background-color: #EE2A5A;
+            }
+
+            .groups .group.group-b .group-teams p {
+                color: #EE2D2F;
+            }
+
+        .groups .group.group-c {
+            border: 2px solid #9D2B5A;
+        }
+
+            .groups .group.group-c .group-top {
+                background-color: #9D2B5A;
+            }
+
+            .groups .group.group-c .group-teams p {
+                color: #EE2D2F;
+            }
+
+        .groups .group.group-d {
+            border: 2px solid #FEBE10;
+        }
+
+            .groups .group.group-d .group-top {
+                background-color: #FEBE10;
+            }
+
+            .groups .group.group-d .group-teams p {
+                color: #FEBE10;
+            }
+
+        .groups .group.group-e {
+            border: 2px solid #00A65D;
+        }
+
+            .groups .group.group-e .group-top {
+                background-color: #00A65D;
+            }
+
+            .groups .group.group-e .group-teams p {
+                color: #00A65D;
+            }
+
+        .groups .group.group-f {
+            border: 2px solid #00AEEF;
+        }
+
+            .groups .group.group-f .group-top {
+                background-color: #00AEEF;
+            }
+
+            .groups .group.group-f .group-teams p {
+                color: #00AEEF;
+            }
+
+        .groups .group.group-g {
+            border: 2px solid #933192;
+        }
+
+            .groups .group.group-g .group-top {
+                background-color: #933192;
+            }
+
+            .groups .group.group-g .group-teams p {
+                color: #933192;
+            }
+
+        .groups .group.group-h {
+            border: 2px solid #009A95;
+        }
+
+            .groups .group.group-h .group-top {
+                background-color: #009A95;
+            }
+
+            .groups .group.group-h .group-teams p {
+                color: #009A95;
+            }
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.share-icon {
+    color: #fff;
+    opacity: 0.35;
+}
+
+    .share-icon:hover {
+        opacity: 1;
+        -webkit-animation: pulse 0.5s;
+        animation: pulse 0.5s;
+    }
+
+.date {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-family: 'Istok Web', sans-serif;
+    color: #3F915F;
+}
+
+body {
+    height: 100%;
+}
+
+    body .wrapper-general, body .wrapper, body .contentBody, body #bracket {
+        height: 100%;
+    }
+
+    body.polla {
+        background: url("../images/bg.png") no-repeat center center;
+        background-size: cover;
+        height: 100%;
+        /*overflow: hidden;*/
+    }
+
+    body.info-general {
+        /*background: url('../images/bg_tyc.png') no-repeat top left;*/
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        /*overflow: hidden;*/
+    }
+
+.tyc {
+    height: 100%;
+}
+
+    .tyc .ct-tyc {
+        /*margin: 40px;*/
+        /*border: 1px solid black;*/
+        min-height: 100%;
+    }
+
+    .tyc .ct-info {
+        width: 50%;
+        margin-left: 5%;
+        padding-top: 100px;
+        margin-bottom: 40px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+        .tyc .ct-info .info {
+            background-color: #FFDE00;
+            width: 100%;
+            padding: 20px;
+        }
+
+            .tyc .ct-info .info .title {
+                color: #E31E26;
+                text-transform: uppercase;
+                font-size: 20px;
+            }
+
+            .tyc .ct-info .info ul {
+                margin: 0;
+                padding-left: 0;
+            }
+
+                .tyc .ct-info .info ul li {
+                    font-size: 15px;
+                    list-style: none;
+                    position: relative;
+                    padding-left: 20px;
+                    margin-bottom: 15px;
+                }
+
+                    .tyc .ct-info .info ul li a {
+                        color: black;
+                        text-decoration: underline;
+                    }
+
+                    .tyc .ct-info .info ul li:before {
+                        content: "";
+                        background-color: #E31E26;
+                        width: 15px;
+                        height: 15px;
+                        position: absolute;
+                        left: 0;
+                        top: 2px;
+                        border-radius: 50%;
+                    }
+
+        .tyc .ct-info .line {
+            width: 100%;
+            height: 30px;
+        }
+
+            .tyc .ct-info .line.blueline {
+                background-color: #007AC2;
+                margin-top: 10px;
+            }
+
+            .tyc .ct-info .line.redline {
+                margin-top: 10px;
+                background-color: #E31E26;
+            }
+
+    .tyc .ct-imagen {
+        width: 44%;
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        top: 120px;
+        background: url("../images/misma-pasion.png") no-repeat center center;
+        background-size: contain;
+        height: 620px;
+    }
+
+        .tyc .ct-imagen .text {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+            .tyc .ct-imagen .text img {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+
+    .tyc .logo-unicentro {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        height: 140px;
+    }
+
+    .tyc .redes {
+        position: absolute;
+        bottom: 30px;
+        left: 5%;
+        font-size: 15px;
+    }
+
+        .tyc .redes a {
+            color: white;
+            margin-right: 5px;
+        }
+
+    .tyc#admon .logo-unicentro {
+        background: url("../images/logo-unicentro-red.png") no-repeat center center;
+        background-size: cover;
+    }
+
+    .tyc#aliados .logo-unicentro {
+        background: url("../images/logo-unicentro-azul.png") no-repeat center center;
+        background-size: cover;
+    }
+
+    .tyc#locales .logo-unicentro {
+        background: url("../images/logo-unicentro-blanco.png") no-repeat center center;
+        background-size: cover;
+    }
+
+    .tyc#general .logo-unicentro {
+        background: url("../images/logo-unicentro-amarillo.png") no-repeat center center;
+        background-size: cover;
+    }
+
+body .wrapper-general, body .wrapper, body .contentBody, body .contentBody .tyc {
+    overflow: auto;
+}
+
+@media screen and (min-width: 981px) and (max-width: 1099px) {
+    /*.container {margin: 0 1%;}*/
+    /*.champion {width: 14%;}
+	.split {width:43%; }
+	.split-one .vote-box {margin-left: 138px;}
+	.hero p.intro {font-size: 28px;}
+	.hero p.year {margin: 5px 0 10px;}*/
+}
+
+@media screen and (max-width: 1024px) {
+    /*.container {-webkit-flex-direction:column;-moz-flex-direction:column;flex-direction:column;}*/
+    /*.split, .champion {width: 90%;margin: 35px 5%;}*/
+    /*.split, .champion {width: 100%;margin: 0;}
+	.champion {-webkit-box-ordinal-group:3;-moz-box-ordinal-group:3;-ms-flex-order:3;-webkit-order:3;order:3;}
+	.split {padding-bottom: 20px;}
+
+	.hero p.intro {font-size: 24px;}
+	.hero h1 {font-size: 3em; margin: 15px 0;}
+	.hero p {font-size: 1em;}
+	.split-two .round.round-three{    margin-left: 0;}
+	.split-one .round.round-three{    margin-right: 0;}*/
+}
+
+/*estilos para tablet y mobile*/
+@media (max-width: 1024px) {
+    .hidden-mobile-tablet {
+        display: none !important;
+    }
+
+    .container {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        flex-direction: column;
+    }
+    /*.split, .champion {width: 90%;margin: 35px 5%;}*/
+    .split, .champion {
+        width: 100%;
+        margin: 0;
+    }
+
+    .champion {
+        -webkit-box-ordinal-group: 3;
+        -moz-box-ordinal-group: 3;
+        -ms-flex-order: 3;
+        -webkit-order: 3;
+        order: 3;
+    }
+
+    .split {
+        padding-bottom: 20px;
+    }
+
+    .hero p.intro {
+        font-size: 24px;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+        margin: 15px 0;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .split-two .round.round-three {
+        margin-left: 0;
+    }
+
+    .split-one .round.round-three {
+        margin-right: 0;
+    }
+
+    .groups {
+        margin-top: 30px;
+    }
+
+    .final .matchup, .semifinal .matchup {
+        max-width: 400px;
+        height: auto;
+        margin: 0 auto;
+        padding: 80px 5px 50px;
+    }
+
+    .logo {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .tyc {
+        overflow: auto;
+    }
+
+        .tyc .ct-info {
+            width: 90%;
+            padding-top: 30px;
+            margin: 0 auto;
+            text-align: left;
+            display: block;
+        }
+
+        .tyc .redes {
+            left: 7%;
+        }
+
+        .tyc .ct-tyc {
+            position: relative;
+            margin: 0px;
+            border: none;
+        }
+
+    .tyc {
+        text-align: right;
+    }
+
+        .tyc .redes {
+            position: relative;
+            bottom: initial;
+            margin-top: 50px;
+            text-align: left;
+            left: 0%;
+            padding-left: 7%;
+        }
+
+        .tyc .logo-unicentro {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+            margin-bottom: -5px;
+        }
+
+        .tyc .ct-imagen {
+            position: relative;
+            width: 60%;
+            margin: 0 auto;
+            display: block;
+            margin-top: 50px;
+            top: 0;
+        }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .groups .group {
+        width: 24%;
+        margin: 10px 0.5%;
+    }
+}
+
+/*estilos para mobile*/
+@media (max-width: 767px) {
+    #bracket {
+        margin: 7px;
+        padding-top: 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .groups .group {
+        width: 48%;
+        margin: 10px 1%;
+    }
+
+    .champion {
+        width: 95%;
+        margin: 25px 2.5%;
+    }
+
+    .groups .group {
+        max-width: 250px;
+    }
+
+    .split {
+        width: 95%;
+        margin: 25px 2.5%;
+    }
+
+    .tyc .ct-info {
+        width: 90%;
+        text-align: left;
+        margin: 0 auto;
+    }
+    /*.tyc .ct-tyc{
+		margin: 7px;
+		
+		height: auto;
+
+	}*/
+    .tyc {
+        text-align: right;
+    }
+
+        .tyc .redes {
+            position: relative;
+            bottom: initial;
+            margin-top: 50px;
+            text-align: left;
+            left: 0%;
+            padding-left: 7%;
+        }
+
+        .tyc .logo-unicentro {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+            margin-bottom: -5px;
+        }
+
+        .tyc .ct-imagen {
+            width: 85%;
+            height: 330px;
+            margin-top: 180px;
+        }
+}
+
+@media screen and (max-width: 450px) {
+    .round {
+        width: 33%;
+    }
+
+    .current {
+        -webkit-flex-grow: 1;
+        -moz-flex-grow: 1;
+        flex-grow: 1;
+    }
+
+    .hero h1 {
+        font-size: 2.15em;
+        letter-spacing: 0;
+        margin: 0;
+    }
+
+    .hero p.intro {
+        font-size: 1.15em;
+        margin-bottom: -10px;
+    }
+
+    .round-details {
+        font-size: 90%;
+    }
+
+    .hero-wrap {
+        padding: 2.5em;
+    }
+
+    .hero p.year {
+        margin: 5px 0 10px;
+        font-size: 18px;
+    }
+
+    .groups .group {
+        width: 96%;
+        margin: 15px 0;
+    }
+
+    .bttm {
+        width: 60px;
+    }
+
+    .matchup {
+        border-radius: 10px;
+    }
+
+    .split {
+        flex-direction: column;
+        margin: 5px 2.5%;
+    }
+
+        .split .round {
+            flex-wrap: wrap;
+            margin-right: 0;
+            margin: 20px 0;
+            width: 100%;
+        }
+
+            .split .round.round-one .matchup {
+                width: 48%;
+            }
+
+                .split .round.round-one .matchup:nth-child(1), .split .round.round-one .matchup:nth-child(3) {
+                    margin-right: 10px;
+                }
+
+            .split .round.round-two .matchup {
+                width: 48%;
+                margin: 0;
+            }
+
+                .split .round.round-two .matchup:nth-child(1) {
+                    margin-right: 10px;
+                }
+
+            .split .round.round-three .matchup {
+                margin: 10px 50px;
+            }
+
+    .flex-mobile {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .champion {
+        order: 2;
+    }
+
+    .split-two {
+        order: 2;
+    }
+
+    .ct-cta {
+        margin-top: 10px;
+    }
+
+    .hidden-max450 {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 449px) {
+    .hidden-min450 {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hidden-desktop {
+        display: none !important;
+    }
+
+    .ct-redes-logo {
+        position: relative;
+        /* margin-top: 20px; */
+        height: 140px;
+        margin-top: -130px;
+    }
+
+    .tyc .ct-info {
+        margin-bottom: 70px;
+    }
+}
+ 
+.li-campeon{
+    width: 85% !important;
+    height: 30px !important;
+}
+ 
+.score-campeon{
+    height: 30px !important;
+    width: 20% !important;
+}
+ 
+.campeon-input{
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    width: 78% !important;
+    display: inline-block;
+    padding-left: 10px;
+    border: 0;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 25px;
+    height: 30px !important;
+}

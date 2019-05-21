@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbUnicentroCRMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="UC_CUSTOMER">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="GUID" Type="varchar" MaxLength="36" Nullable="false" />
+    <Property Name="ID" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDENTIFICATION_TYPE_ID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDENTIFICATION_NUMBER" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="ACCEPTANCE_NUMBER" Type="varchar" MaxLength="10" />
+    <Property Name="GENRE_ID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="NAME_1" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="NAME_2" Type="varchar" MaxLength="20" />
+    <Property Name="LAST_NAME_1" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="LAST_NAME_2" Type="varchar" MaxLength="20" />
+    <Property Name="PHONE" Type="varchar" MaxLength="10" />
+    <Property Name="MARITAL_STATUS_ID" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="BORN_DATE" Type="datetime" Nullable="false" />
+    <Property Name="ADDRESS" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="70" Nullable="false" />
+    <Property Name="OCCUPATION_ID" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="PROFESSION_ID" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="MOBILE_PHONE" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="HOBBY_ID" Type="varchar" MaxLength="4000" />
+    <Property Name="PET_ID" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="CUSTOMER_SEGMENTATION_ID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ALLOW_SEND_INFO_EMAIL" Type="bit" />
+    <Property Name="ALLOW_SEND_INFO_ADDRESS" Type="bit" />
+    <Property Name="ALLOW_SEND_INFO_MOBILE" Type="bit" />
+    <Property Name="REGISTER_DATE" Type="datetime" />
+    <Property Name="LAST_UPDATE" Type="datetime" />
+    <Property Name="IS_ACTIVE" Type="bit" />
+    <Property Name="IS_BANNED" Type="bit" />
+    <Property Name="NEIGHBORHOOD_ID" Type="varchar" MaxLength="50" />
+    <Property Name="HAS_CHILDREN" Type="bit" />
+    <Property Name="ADDITIONAL_ADDRESS_INFO" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="UC_EMPLOYEE">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="GUID" Type="varchar" MaxLength="36" Nullable="false" />
+    <Property Name="ID" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDENTIFICATION_TYPE_ID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDENTIFICATION_NUMBER" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="ACCEPTANCE_NUMBER" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="GENRE_ID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="NAME_1" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="NAME_2" Type="varchar" MaxLength="20" />
+    <Property Name="LAST_NAME_1" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="LAST_NAME_2" Type="varchar" MaxLength="20" />
+    <Property Name="PHONE" Type="varchar" MaxLength="10" />
+    <Property Name="MARITAL_STATUS_ID" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="BORN_DATE" Type="datetime" />
+    <Property Name="ADDRESS" Type="varchar" MaxLength="100" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="70" />
+    <Property Name="BUSINESS_ID" Type="varchar" MaxLength="36" Nullable="false" />
+    <Property Name="ADMISSION_DATE" Type="datetime" />
+    <Property Name="WORK_WEEKEND" Type="bit" Nullable="false" />
+    <Property Name="CHARGE_ID" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="USERNAME" Type="varchar" MaxLength="15" />
+    <Property Name="PASSWORD" Type="varchar" MaxLength="15" />
+    <Property Name="REGISTER_DATE" Type="datetime" />
+    <Property Name="LAST_UPDATE" Type="datetime" />
+    <Property Name="IS_ACTIVE" Type="bit" Nullable="false" />
+    <Property Name="NEIGHBORHOOD_ID" Type="varchar" MaxLength="50" />
+    <Property Name="DATE_IN_UNICENTRO" Type="datetime" />
+    <Property Name="ADDITIONAL_ADDRESS_INFO" Type="varchar" MaxLength="200" />
+    <Property Name="HAS_CHILDREN" Type="bit" />
+  </EntityType>
+  <EntityType Name="UNIPOLLA_BET">
+    <Key>
+      <PropertyRef Name="ID_BET" />
+    </Key>
+    <Property Name="ID_BET" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_CODES_WINNER" Type="varchar" MaxLength="36" Nullable="false" />
+    <Property Name="ID_MATCH" Type="int" Nullable="false" />
+    <Property Name="ID_TEAM_1" Type="int" Nullable="false" />
+    <Property Name="ID_TEAM_2" Type="int" Nullable="false" />
+    <Property Name="REGISTER_DATE_MATCH" Type="datetime" Nullable="false" />
+    <Property Name="POINTS_TEAM_1" Type="int" />
+    <Property Name="POINTS_TEAM_2" Type="int" />
+    <Property Name="REGISTER_DATE_POINTS" Type="int" />
+  </EntityType>
+  <EntityType Name="UNIPOLLA_CODES">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="GUID" Type="varchar" MaxLength="36" Nullable="false" />
+    <Property Name="ID" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="ACTIVE" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UNIPOLLA_CODES_WINNER">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="GUID" Type="varchar" MaxLength="36" Nullable="false" />
+    <Property Name="ID" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_EVENT" Type="varchar" MaxLength="36" Nullable="false" />
+    <Property Name="ID_CLIENTE" Type="varchar" MaxLength="36" />
+    <Property Name="REGISTER_DATE" Type="datetime" Nullable="false" />
+    <Property Name="IS_ACTIVE" Type="bit" Nullable="false" />
+    <Property Name="CODE_ID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="EMPLOYEE_ID" Type="varchar" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="UNIPOLLA_MATCH">
+    <Key>
+      <PropertyRef Name="ID_MATCH" />
+    </Key>
+    <Property Name="ID_MATCH" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_TEAM_1" Type="int" />
+    <Property Name="ID_TEAM_2" Type="int" />
+    <Property Name="ID_WINNER_TEAM" Type="int" />
+    <Property Name="WINNER_POINTS" Type="int" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="UNIPOLLA_TEAM">
+    <Key>
+      <PropertyRef Name="ID_TEAM" />
+    </Key>
+    <Property Name="ID_TEAM" Type="int" Nullable="false" />
+    <Property Name="NAME_TEAM" Type="nvarchar" MaxLength="50" />
+    <Property Name="LOGO_TEAM" Type="nvarchar" MaxLength="400" />
+    <Property Name="ABBREVIATION" Type="nvarchar" MaxLength="10" />
+    <Property Name="ACTIVE" Type="bit" />
+    <Property Name="GROUP_TEAM" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <Association Name="FK_UNIPOLLA_BET_UNIPOLLA_CODES_WINNER">
+    <End Role="UNIPOLLA_CODES_WINNER" Type="Self.UNIPOLLA_CODES_WINNER" Multiplicity="1" />
+    <End Role="UNIPOLLA_BET" Type="Self.UNIPOLLA_BET" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UNIPOLLA_CODES_WINNER">
+        <PropertyRef Name="GUID" />
+      </Principal>
+      <Dependent Role="UNIPOLLA_BET">
+        <PropertyRef Name="ID_CODES_WINNER" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UNIPOLLA_BET_UNIPOLLA_MATCH">
+    <End Role="UNIPOLLA_MATCH" Type="Self.UNIPOLLA_MATCH" Multiplicity="1" />
+    <End Role="UNIPOLLA_BET" Type="Self.UNIPOLLA_BET" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UNIPOLLA_MATCH">
+        <PropertyRef Name="ID_MATCH" />
+      </Principal>
+      <Dependent Role="UNIPOLLA_BET">
+        <PropertyRef Name="ID_MATCH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UNIPOLLA_BET_UNIPOLLA_TEAM">
+    <End Role="UNIPOLLA_TEAM" Type="Self.UNIPOLLA_TEAM" Multiplicity="1" />
+    <End Role="UNIPOLLA_BET" Type="Self.UNIPOLLA_BET" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UNIPOLLA_TEAM">
+        <PropertyRef Name="ID_TEAM" />
+      </Principal>
+      <Dependent Role="UNIPOLLA_BET">
+        <PropertyRef Name="ID_TEAM_1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UNIPOLLA_BET_UNIPOLLA_TEAM1">
+    <End Role="UNIPOLLA_TEAM" Type="Self.UNIPOLLA_TEAM" Multiplicity="1" />
+    <End Role="UNIPOLLA_BET" Type="Self.UNIPOLLA_BET" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UNIPOLLA_TEAM">
+        <PropertyRef Name="ID_TEAM" />
+      </Principal>
+      <Dependent Role="UNIPOLLA_BET">
+        <PropertyRef Name="ID_TEAM_2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_UNIPOLLA_CODES_WINNER_UC_CUSTOMER_ID_CLIENTE">
+    <End Role="UC_CUSTOMER" Type="Self.UC_CUSTOMER" Multiplicity="0..1" />
+    <End Role="UNIPOLLA_CODES_WINNER" Type="Self.UNIPOLLA_CODES_WINNER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UC_CUSTOMER">
+        <PropertyRef Name="GUID" />
+      </Principal>
+      <Dependent Role="UNIPOLLA_CODES_WINNER">
+        <PropertyRef Name="ID_CLIENTE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_UNIPOLLA_CODES_WINNER_UC_EMPLOYEE_EMPLOYEE_ID">
+    <End Role="UC_EMPLOYEE" Type="Self.UC_EMPLOYEE" Multiplicity="0..1" />
+    <End Role="UNIPOLLA_CODES_WINNER" Type="Self.UNIPOLLA_CODES_WINNER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UC_EMPLOYEE">
+        <PropertyRef Name="GUID" />
+      </Principal>
+      <Dependent Role="UNIPOLLA_CODES_WINNER">
+        <PropertyRef Name="EMPLOYEE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Errores durante la generación:
+advertencia 6035: La relación 'fk_UNIPOLLA_CODES_WINNER_UNIPOLLA_CODES_CODE_ID' tiene columnas que no forman parte de la clave de la tabla en el lado principal de la relación. Se excluyó la relación.
+        <Association Name="fk_UNIPOLLA_CODES_WINNER_UNIPOLLA_CODES_CODE_ID" />-->
+  <Association Name="FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM">
+    <End Role="UNIPOLLA_TEAM" Type="Self.UNIPOLLA_TEAM" Multiplicity="0..1" />
+    <End Role="UNIPOLLA_MATCH" Type="Self.UNIPOLLA_MATCH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UNIPOLLA_TEAM">
+        <PropertyRef Name="ID_TEAM" />
+      </Principal>
+      <Dependent Role="UNIPOLLA_MATCH">
+        <PropertyRef Name="ID_TEAM_1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM1">
+    <End Role="UNIPOLLA_TEAM" Type="Self.UNIPOLLA_TEAM" Multiplicity="0..1" />
+    <End Role="UNIPOLLA_MATCH" Type="Self.UNIPOLLA_MATCH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UNIPOLLA_TEAM">
+        <PropertyRef Name="ID_TEAM" />
+      </Principal>
+      <Dependent Role="UNIPOLLA_MATCH">
+        <PropertyRef Name="ID_TEAM_2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM2">
+    <End Role="UNIPOLLA_TEAM" Type="Self.UNIPOLLA_TEAM" Multiplicity="0..1" />
+    <End Role="UNIPOLLA_MATCH" Type="Self.UNIPOLLA_MATCH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UNIPOLLA_TEAM">
+        <PropertyRef Name="ID_TEAM" />
+      </Principal>
+      <Dependent Role="UNIPOLLA_MATCH">
+        <PropertyRef Name="ID_WINNER_TEAM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="dbUnicentroCRMModelStoreContainer">
+    <EntitySet Name="UC_CUSTOMER" EntityType="Self.UC_CUSTOMER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UC_EMPLOYEE" EntityType="Self.UC_EMPLOYEE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UNIPOLLA_BET" EntityType="Self.UNIPOLLA_BET" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UNIPOLLA_CODES" EntityType="Self.UNIPOLLA_CODES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UNIPOLLA_CODES_WINNER" EntityType="Self.UNIPOLLA_CODES_WINNER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UNIPOLLA_MATCH" EntityType="Self.UNIPOLLA_MATCH" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UNIPOLLA_TEAM" EntityType="Self.UNIPOLLA_TEAM" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_UNIPOLLA_BET_UNIPOLLA_CODES_WINNER" Association="Self.FK_UNIPOLLA_BET_UNIPOLLA_CODES_WINNER">
+      <End Role="UNIPOLLA_CODES_WINNER" EntitySet="UNIPOLLA_CODES_WINNER" />
+      <End Role="UNIPOLLA_BET" EntitySet="UNIPOLLA_BET" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UNIPOLLA_BET_UNIPOLLA_MATCH" Association="Self.FK_UNIPOLLA_BET_UNIPOLLA_MATCH">
+      <End Role="UNIPOLLA_MATCH" EntitySet="UNIPOLLA_MATCH" />
+      <End Role="UNIPOLLA_BET" EntitySet="UNIPOLLA_BET" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UNIPOLLA_BET_UNIPOLLA_TEAM" Association="Self.FK_UNIPOLLA_BET_UNIPOLLA_TEAM">
+      <End Role="UNIPOLLA_TEAM" EntitySet="UNIPOLLA_TEAM" />
+      <End Role="UNIPOLLA_BET" EntitySet="UNIPOLLA_BET" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UNIPOLLA_BET_UNIPOLLA_TEAM1" Association="Self.FK_UNIPOLLA_BET_UNIPOLLA_TEAM1">
+      <End Role="UNIPOLLA_TEAM" EntitySet="UNIPOLLA_TEAM" />
+      <End Role="UNIPOLLA_BET" EntitySet="UNIPOLLA_BET" />
+    </AssociationSet>
+    <AssociationSet Name="fk_UNIPOLLA_CODES_WINNER_UC_CUSTOMER_ID_CLIENTE" Association="Self.fk_UNIPOLLA_CODES_WINNER_UC_CUSTOMER_ID_CLIENTE">
+      <End Role="UC_CUSTOMER" EntitySet="UC_CUSTOMER" />
+      <End Role="UNIPOLLA_CODES_WINNER" EntitySet="UNIPOLLA_CODES_WINNER" />
+    </AssociationSet>
+    <AssociationSet Name="fk_UNIPOLLA_CODES_WINNER_UC_EMPLOYEE_EMPLOYEE_ID" Association="Self.fk_UNIPOLLA_CODES_WINNER_UC_EMPLOYEE_EMPLOYEE_ID">
+      <End Role="UC_EMPLOYEE" EntitySet="UC_EMPLOYEE" />
+      <End Role="UNIPOLLA_CODES_WINNER" EntitySet="UNIPOLLA_CODES_WINNER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM" Association="Self.FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM">
+      <End Role="UNIPOLLA_TEAM" EntitySet="UNIPOLLA_TEAM" />
+      <End Role="UNIPOLLA_MATCH" EntitySet="UNIPOLLA_MATCH" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM1" Association="Self.FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM1">
+      <End Role="UNIPOLLA_TEAM" EntitySet="UNIPOLLA_TEAM" />
+      <End Role="UNIPOLLA_MATCH" EntitySet="UNIPOLLA_MATCH" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM2" Association="Self.FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM2">
+      <End Role="UNIPOLLA_TEAM" EntitySet="UNIPOLLA_TEAM" />
+      <End Role="UNIPOLLA_MATCH" EntitySet="UNIPOLLA_MATCH" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
