@@ -202,7 +202,7 @@ namespace Big.Unicentro.Unipolla.UI.Controllers
             else
             {
                 objResponse.Result = false;
-                objResponse.Message = new ClsMessage { Message = "Existe mas de Un Torneo Activado, Favor Verificar" };
+                objResponse.Message = new ClsMessage { Message = "Existe mas de Un Torneo Activado o No hay ninguno, Favor Verificar" };
             }
 
             try

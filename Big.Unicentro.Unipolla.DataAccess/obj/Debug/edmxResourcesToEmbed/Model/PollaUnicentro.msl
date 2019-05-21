@@ -117,6 +117,7 @@
     <EntitySetMapping Name="UNIPOLLA_TEAM">
       <EntityTypeMapping TypeName="dbUnicentroCRMModel.UNIPOLLA_TEAM">
         <MappingFragment StoreEntitySet="UNIPOLLA_TEAM">
+          <ScalarProperty Name="ID_TOURNAMENT" ColumnName="ID_TOURNAMENT" />
           <ScalarProperty Name="GROUP_TEAM" ColumnName="GROUP_TEAM" />
           <ScalarProperty Name="ACTIVE" ColumnName="ACTIVE" />
           <ScalarProperty Name="ABBREVIATION" ColumnName="ABBREVIATION" />

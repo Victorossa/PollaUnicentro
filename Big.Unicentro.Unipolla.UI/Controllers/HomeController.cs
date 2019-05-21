@@ -21,7 +21,7 @@ namespace Big.Unicentro.Unipolla.UI.Controllers
         public ActionResult Index()
         {
             ClsResponse<int> TournamentsID = TournamentBLL.GetTournamentID();
-            ClsResponse<List<UNIPOLLA_TEAM>> objTeams = MatchBLL.GetTeams();
+            ClsResponse<List<UNIPOLLA_TEAM>> objTeams = MatchBLL.GetTeams(TournamentsID.Result);
             ClsResponse<List<UNIPOLLA_BET>> objBets = BetBLL.GetBets(SessionHelper.IdCurrentCodesWinner);
 
 

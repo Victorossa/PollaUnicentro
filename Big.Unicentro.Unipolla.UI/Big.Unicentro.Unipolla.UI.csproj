@@ -193,6 +193,7 @@
     <Content Include="Content\images\semifinal.png" />
     <Content Include="Content\images\uega-registra.png" />
     <Content Include="Content\images\yellow_top.png" />
+    <Content Include="Content\js\develop1.js" />
     <Content Include="Content\js\develop.js" />
     <Content Include="Content\js\develop_login.js" />
     <Content Include="Content\js\main.js" />

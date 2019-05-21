@@ -30,6 +30,7 @@ namespace Big.Unicentro.Unipolla.DataAccess.Model
         public string ABBREVIATION { get; set; }
         public Nullable<bool> ACTIVE { get; set; }
         public string GROUP_TEAM { get; set; }
+        public Nullable<int> ID_TOURNAMENT { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<UNIPOLLA_BET> UNIPOLLA_BET { get; set; }

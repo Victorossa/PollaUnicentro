@@ -206,6 +206,7 @@
     <NavigationProperty Name="UNIPOLLA_MATCH" Relationship="dbUnicentroCRMModel.FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM" FromRole="UNIPOLLA_TEAM" ToRole="UNIPOLLA_MATCH" />
     <NavigationProperty Name="UNIPOLLA_MATCH1" Relationship="dbUnicentroCRMModel.FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM1" FromRole="UNIPOLLA_TEAM" ToRole="UNIPOLLA_MATCH" />
     <NavigationProperty Name="UNIPOLLA_MATCH2" Relationship="dbUnicentroCRMModel.FK_UNIPOLLA_MATCH_UNIPOLLA_TEAM2" FromRole="UNIPOLLA_TEAM" ToRole="UNIPOLLA_MATCH" />
+    <Property Name="ID_TOURNAMENT" Type="Int32" />
   </EntityType>
   <Association Name="FK_UNIPOLLA_BET_UNIPOLLA_CODES_WINNER">
     <End Type="dbUnicentroCRMModel.UNIPOLLA_CODES_WINNER" Role="UNIPOLLA_CODES_WINNER" Multiplicity="1" />

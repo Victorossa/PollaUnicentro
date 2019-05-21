@@ -128,6 +128,7 @@
     <Property Name="ABBREVIATION" Type="nvarchar" MaxLength="10" />
     <Property Name="ACTIVE" Type="bit" />
     <Property Name="GROUP_TEAM" Type="nvarchar" MaxLength="10" />
+    <Property Name="ID_TOURNAMENT" Type="int" />
   </EntityType>
   <EntityType Name="UNIPOLLA_TOURNAMENT">
     <Key>

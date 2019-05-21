@@ -9,9 +9,9 @@ namespace Big.Unicentro.Unipolla.Core.BLL
 {
    public class MatchBLL
     {
-        public static ClsResponse<List<UNIPOLLA_TEAM>> GetTeams()
+        public static ClsResponse<List<UNIPOLLA_TEAM>> GetTeams(int ID_TOURNAMENT)
         {
-            return MatchDAL.GetTeams();
+            return MatchDAL.GetTeams(ID_TOURNAMENT);
         }
     }
 }

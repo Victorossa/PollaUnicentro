@@ -10,7 +10,7 @@ namespace Big.Unicentro.Unipolla.DataAccess.DAL
 {
    public  class MatchDAL
     {
-        public static ClsResponse<List<UNIPOLLA_TEAM>> GetTeams()
+        public static ClsResponse<List<UNIPOLLA_TEAM>> GetTeams(int ID_TOURNAMENT)
         {
             ClsResponse<List<UNIPOLLA_TEAM>> obj = new ClsResponse<List<UNIPOLLA_TEAM>>();
             try
@@ -18,7 +18,7 @@ namespace Big.Unicentro.Unipolla.DataAccess.DAL
                 List<UNIPOLLA_TEAM> team;
                 using (dbUnicentroCRMEntities db = new dbUnicentroCRMEntities())
                 {
-                    team = db.UNIPOLLA_TEAM.Where(x => x.ACTIVE == true).ToList();
+                    team = db.UNIPOLLA_TEAM.Where(x => x.ID_TOURNAMENT == ID_TOURNAMENT).ToList();
                 }
                 if (team != null && team.Count > 0)
                 {

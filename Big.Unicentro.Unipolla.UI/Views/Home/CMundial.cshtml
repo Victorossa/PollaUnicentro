@@ -27,6 +27,7 @@
         <div class="round round-one current">
             <div class="round-details">Octavos de final</div>
             <div class="flex-mobile">
+                @*Div de izquierda*@
                 <ul class="matchup matchup-red">
                     <div class="blue top">
                         <span>1</span>
@@ -172,6 +173,7 @@
                     </li>
                     <img class="blue bttm" src="@Url.Content("~/Content/images/blue_top.png")" alt="">
                 </ul>
+                @*Div de izquierda*@
                 <ul class="matchup matchup-red">
                     <div class="blue top">
                         <span>3</span>
@@ -645,17 +647,6 @@
                 </li>
             </ul>
 
-            <div class="wrapper-general">
-                <div class="wrapper">
-                    <div class="contentBody">
-                        <section class="polla">
-                            <div id="bracket">
-                                @Html.Partial("_Footer2")
-                            </div>
-                        </section>
-                    </div>
-                </div>
-            </div>
 
         </div>
         @if (DateTime.Now < finishDateTime && listBet.Count <= 0)
@@ -1110,11 +1101,11 @@
         }
 
 
-        
+
 
     </div>
 
-    
+
 
 </div>
 
@@ -1125,7 +1116,5 @@
         @Html.Raw("$('select').attr('disabled', 'disabled');")
     }
     });
-
-
-
 </script>
+<script src="@Url.Content("~/Content/js/develop.js")"></script>
