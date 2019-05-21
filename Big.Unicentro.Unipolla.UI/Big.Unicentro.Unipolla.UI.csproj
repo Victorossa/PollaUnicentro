@@ -287,11 +287,14 @@
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="WebConnectionString.config" />
     <Content Include="WebAppSettings.config" />
-    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Shared\_Footer1.cshtml" />
     <Content Include="Views\Shared\Terms.cshtml" />
     <Content Include="Views\Home\Mudial.cshtml" />
     <Content Include="Views\Home\CAmerica.cshtml" />
     <Content Include="Views\Home\CCorto.cshtml" />
+    <Content Include="Views\Home\CMundial.cshtml" />
+    <Content Include="Views\Shared\_Footer2.cshtml" />
+    <Content Include="Views\Shared\_Footer3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

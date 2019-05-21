@@ -33,15 +33,17 @@ namespace Big.Unicentro.Unipolla.UI.Controllers
             }
             ViewBag.Bets = objBets.Result;
 
+
+
             if (TournamentsID.Result == 1)
             {
                 return View("CMundial");
             }
-            if (TournamentsID.Result == 1)
+            if (TournamentsID.Result == 2)
             {
                 return View("CAmerica");
             }
-            if (TournamentsID.Result == 1)
+            if (TournamentsID.Result == 3)
             {
                 return View("CCorto");
             }
