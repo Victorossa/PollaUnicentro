@@ -1,0 +1,200 @@
+2019-05-22 08:12:12.8660|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:12:13.0539|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:12:13.3907|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:12:13.4996|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:12:13.6096|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:12:13.7346|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:12:13.8585|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:12:13.9694|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:16:15.7590|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:16:15.8770|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:16:16.1969|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:16:16.3058|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:16:16.4198|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:16:16.5320|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:16:16.8009|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:16:16.9308|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:40:17.2703|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:40:17.4022|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:40:17.7314|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:40:17.8604|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:40:17.9983|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:40:18.1134|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:40:18.2463|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 08:40:18.3686|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 12:09:58.3944|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 12:09:58.5154|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 12:09:58.8162|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 12:09:58.9391|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 12:09:59.0651|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 12:09:59.1820|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 12:09:59.3181|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 12:09:59.4560|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 13:06:19.0391|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 13:06:19.2160|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 13:06:19.5218|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 13:06:19.6298|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 13:06:19.8466|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 13:06:19.9795|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 13:06:20.0975|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57
+2019-05-22 13:06:20.2297|ERROR|Big.Unicentro.Unipolla.DataAccess.Common.Diagnostics.ExceptionLogging|An error occurred while updating the entries. See the inner exception for details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en Big.Unicentro.Unipolla.DataAccess.DAL.BetDAL.SaveBets(UNIPOLLA_BET bet) en C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.DataAccess\DAL\BetDAL.cs:línea 57

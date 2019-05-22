@@ -16,13 +16,77 @@ pathSite = (pathLocalhost === "https://www.unicentromedellin.com.co/") ? "https:
 
 $(".score").attr('disabled', 'disabled');
 
+$("#ddl1A").change(function () {
+    $('#ddlW49 option').remove();
+    var data1 = $("#ddl1A option:selected");
+    var data2 = $("#ddl2B option:selected");
+    $("#ddlW49").append('<option value="-1">-- Seleccione --</option>')
+        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
+        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
+});
+$("#ddl2B").change(function () {
+    $('#ddlW49 option').remove();
+    var data1 = $("#ddl1A option:selected");
+    var data2 = $("#ddl2B option:selected");
+    $("#ddlW49").append('<option value="-1">-- Seleccione --</option>')
+        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
+        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
+});
+
+$("#ddl1C").change(function () {
+    $('#ddlW51 option').remove();
+    var data1 = $("#ddl1C option:selected");
+    var data2 = $("#ddl2D option:selected");
+    $("#ddlW51").append('<option value="-1">-- Seleccione --</option>')
+        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
+        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
 
 
+});
+$("#ddl2D").change(function () {
+    $('#ddlW51 option').remove();
+    var data1 = $("#ddl1C option:selected");
+    var data2 = $("#ddl2D option:selected");
+    $("#ddlW51").append('<option value="-1">-- Seleccione --</option>')
+        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
+        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
 
 
+});
 
+$("#ddl1B").change(function () {
+    $('#ddlW50 option').remove();
+    var data1 = $("#ddl1B option:selected");
+    var data2 = $("#ddl2A option:selected");
+    $("#ddlW50").append('<option value="-1">-- Seleccione --</option>')
+        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
+        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
+});
+$("#ddl2A").change(function () {
+    $('#ddlW50 option').remove();
+    var data1 = $("#ddl1B option:selected");
+    var data2 = $("#ddl2A option:selected");
+    $("#ddlW50").append('<option value="-1">-- Seleccione --</option>')
+        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
+        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
+});
 
-
+$("#ddl1D").change(function () {
+    $('#ddlW52 option').remove();
+    var data1 = $("#ddl1D option:selected");
+    var data2 = $("#ddl2C option:selected");
+    $("#ddlW52").append('<option value="-1">-- Seleccione --</option>')
+        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
+        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
+});
+$("#ddl2C").change(function () {
+    $('#ddlW52 option').remove();
+    var data1 = $("#ddl1D option:selected");
+    var data2 = $("#ddl2C option:selected");
+    $("#ddlW52").append('<option value="-1">-- Seleccione --</option>')
+        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
+        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
+});
 
 //$("#ddl1E").change(function () {
 //    $('#ddl1E-2F option').remove();
@@ -75,140 +139,42 @@ $(".score").attr('disabled', 'disabled');
 //        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
 //});
 
-//$("#ddl1H").change(function () {
-//    $('#ddl1H-2G option').remove();
-//    var data1 = $("#ddl1H option:selected");
-//    var data2 = $("#ddl2G option:selected");
-//    $("#ddl1H-2G").append('<option value="-1">-- Seleccione --</option>')
-//        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
-//        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
-//});
-//$("#ddl2G").change(function () {
-//    $('#ddl1H-2G option').remove();
-//    var data1 = $("#ddl1H option:selected");
-//    var data2 = $("#ddl2G option:selected");
-//    $("#ddl1H-2G").append('<option value="-1">-- Seleccione --</option>')
-//        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
-//        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
-//});
 
-//$("#ddl1C-2D").change(function () {
-//    $('#ddlW49 option').remove();
-//    var data1 = $("#ddl1C-2D option:selected");
-//    var data2 = $("#ddl1A-2B option:selected");
-//    $("#ddlW49").append('<option value="-1">-- Seleccione --</option>')
-//        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
-//        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
-//});
-//$("#ddl1A-2B").change(function () {
-//    $('#ddlW49 option').remove();
-//    var data1 = $("#ddl1C-2D option:selected");
-//    var data2 = $("#ddl1A-2B option:selected");
-//    $("#ddlW49").append('<option value="-1">-- Seleccione --</option>')
-//        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
-//        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
-//});
-
-//$("#ddl1E-2F").change(function () {
-//    $('#ddlW51 option').remove();
-//    var data1 = $("#ddl1E-2F option:selected");
-//    var data2 = $("#ddl1G-2H option:selected");
-//    $("#ddlW51").append('<option value="-1">-- Seleccione --</option>')
-//        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
-//        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
-//});
-//$("#ddl1G-2H").change(function () {
-//    $('#ddlW51 option').remove();
-//    var data1 = $("#ddl1E-2F option:selected");
-//    var data2 = $("#ddl1G-2H option:selected");
-//    $("#ddlW51").append('<option value="-1">-- Seleccione --</option>')
-//        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
-//        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
-//});
-
-// Para Div 1
-$("#ddl1A").change(function () {
-    $('#ddlW49 option').remove();
-    var data1 = $("#ddl1A option:selected");
-    var data2 = $("#ddl2B option:selected");
-    $("#ddlW49").append('<option value="-1">-- Seleccione --</option>')
+$("#ddl1H").change(function () {
+    $('#ddl1H-2G option').remove();
+    var data1 = $("#ddl1H option:selected");
+    var data2 = $("#ddl2G option:selected");
+    $("#ddl1H-2G").append('<option value="-1">-- Seleccione --</option>')
         .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
         .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
 });
-$("#ddl2B").change(function () {
-    $('#ddlW49 option').remove();
-    var data1 = $("#ddl1A option:selected");
-    var data2 = $("#ddl2B option:selected");
-    $("#ddlW49").append('<option value="-1">-- Seleccione --</option>')
+$("#ddl2G").change(function () {
+    $('#ddl1H-2G option').remove();
+    var data1 = $("#ddl1H option:selected");
+    var data2 = $("#ddl2G option:selected");
+    $("#ddl1H-2G").append('<option value="-1">-- Seleccione --</option>')
         .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
         .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
 });
-//==================================================
-
-// Para Div 2
-$("#ddl1C").change(function () {
-    $('#ddlW51 option').remove();
-    var data1 = $("#ddl1C option:selected");
-    var data2 = $("#ddl2D option:selected");
-    $("#ddlW51").append('<option value="-1">-- Seleccione --</option>')
-        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
-        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
-
-
-});
-$("#ddl2D").change(function () {
-    $('#ddlW51 option').remove();
-    var data1 = $("#ddl1C option:selected");
-    var data2 = $("#ddl2D option:selected");
-    $("#ddlW51").append('<option value="-1">-- Seleccione --</option>')
-        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
-        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
-
-
-});
-//==================================================
-
-// Para Div 3
-$("#ddl1B").change(function () {
-    $('#ddlW50 option').remove();
-    var data1 = $("#ddl1B option:selected");
-    var data2 = $("#ddl2A option:selected");
-    $("#ddlW50").append('<option value="-1">-- Seleccione --</option>')
-        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
-        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
-});
-$("#ddl2A").change(function () {
-    $('#ddlW50 option').remove();
-    var data1 = $("#ddl1B option:selected");
-    var data2 = $("#ddl2A option:selected");
-    $("#ddlW50").append('<option value="-1">-- Seleccione --</option>')
-        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
-        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
-});
-//==================================================
-
-// Para Div 4
-$("#ddl1D").change(function () {
-    $('#ddlW52 option').remove();
-    var data1 = $("#ddl1D option:selected");
-    var data2 = $("#ddl2C option:selected");
-    $("#ddlW52").append('<option value="-1">-- Seleccione --</option>')
-        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
-        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
-});
-$("#ddl2C").change(function () {
-    $('#ddlW52 option').remove();
-    var data1 = $("#ddl1D option:selected");
-    var data2 = $("#ddl2C option:selected");
-    $("#ddlW52").append('<option value="-1">-- Seleccione --</option>')
-        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
-        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
-});
-//==================================================
-
-
 
 //cuartos
+$("#ddl1C-2D").change(function () {
+    $('#ddlW49 option').remove();
+    var data1 = $("#ddl1C-2D option:selected");
+    var data2 = $("#ddl1A-2B option:selected");
+    $("#ddlW49").append('<option value="-1">-- Seleccione --</option>')
+        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
+        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
+});
+$("#ddl1A-2B").change(function () {
+    $('#ddlW49 option').remove();
+    var data1 = $("#ddl1C-2D option:selected");
+    var data2 = $("#ddl1A-2B option:selected");
+    $("#ddlW49").append('<option value="-1">-- Seleccione --</option>')
+        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
+        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
+});
+
 $("#ddl1B-2A").change(function () {
     $('#ddlW50 option').remove();
     var data1 = $("#ddl1B-2A option:selected");
@@ -222,6 +188,23 @@ $("#ddl1D-2C").change(function () {
     var data1 = $("#ddl1B-2A option:selected");
     var data2 = $("#ddl1D-2C option:selected");
     $("#ddlW50").append('<option value="-1">-- Seleccione --</option>')
+        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
+        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
+});
+
+$("#ddl1E-2F").change(function () {
+    $('#ddlW51 option').remove();
+    var data1 = $("#ddl1E-2F option:selected");
+    var data2 = $("#ddl1G-2H option:selected");
+    $("#ddlW51").append('<option value="-1">-- Seleccione --</option>')
+        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
+        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
+});
+$("#ddl1G-2H").change(function () {
+    $('#ddlW51 option').remove();
+    var data1 = $("#ddl1E-2F option:selected");
+    var data2 = $("#ddl1G-2H option:selected");
+    $("#ddlW51").append('<option value="-1">-- Seleccione --</option>')
         .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
         .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
 });
@@ -325,7 +308,6 @@ $("#ddlW50").change(function () {
         .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
         .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
 });
-
 $("#ddlW52").change(function () {
     $('#ddlL62 option').remove();
     var data1 = $("#ddlW50 option:selected");

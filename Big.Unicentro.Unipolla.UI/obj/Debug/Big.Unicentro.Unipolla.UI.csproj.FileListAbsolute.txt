@@ -322,6 +322,7 @@ C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.
 C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.UI\obj\Debug\Big.Unicentro.Unipolla.UI.csproj.CopyComplete
 C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.UI\obj\Debug\Big.Unicentro.Unipolla.UI.dll
 C:\Users\Administrador\Desktop\Proyecto Copa America\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.UI\obj\Debug\Big.Unicentro.Unipolla.UI.pdb
+C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.UI\obj\Debug\Big.Unicentro.Unipolla.UI.csproj.CoreCompileInputs.cache
 C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.UI\bin\ApplicationInsights.config
 C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.UI\bin\Big.Unicentro.Unipolla.UI.dll.config
 C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.UI\bin\Big.Unicentro.Unipolla.UI.dll
@@ -426,7 +427,6 @@ C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipo
 C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.UI\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.UI\bin\es\System.Web.WebPages.Razor.resources.dll
 C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.UI\obj\Debug\Big.Unicentro.Unipolla.UI.csprojAssemblyReference.cache
-C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.UI\obj\Debug\Big.Unicentro.Unipolla.UI.csproj.CoreCompileInputs.cache
 C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.UI\obj\Debug\Big.Unicentro.Unipolla.UI.csproj.CopyComplete
 C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.UI\obj\Debug\Big.Unicentro.Unipolla.UI.dll
 C:\Users\Administrador\Desktop\Proyecto Copa America\Vigente\Big.Unicentro.Unipolla\Big.Unicentro.Unipolla.UI\obj\Debug\Big.Unicentro.Unipolla.UI.pdb
