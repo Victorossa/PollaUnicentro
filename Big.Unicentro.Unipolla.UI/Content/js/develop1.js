@@ -140,91 +140,91 @@ $("#ddl2C").change(function () {
 //});
 
 
-$("#ddl1H").change(function () {
-    $('#ddl1H-2G option').remove();
-    var data1 = $("#ddl1H option:selected");
-    var data2 = $("#ddl2G option:selected");
-    $("#ddl1H-2G").append('<option value="-1">-- Seleccione --</option>')
-        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
-        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
-});
-$("#ddl2G").change(function () {
-    $('#ddl1H-2G option').remove();
-    var data1 = $("#ddl1H option:selected");
-    var data2 = $("#ddl2G option:selected");
-    $("#ddl1H-2G").append('<option value="-1">-- Seleccione --</option>')
-        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
-        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
-});
+//$("#ddl1H").change(function () {
+//    $('#ddl1H-2G option').remove();
+//    var data1 = $("#ddl1H option:selected");
+//    var data2 = $("#ddl2G option:selected");
+//    $("#ddl1H-2G").append('<option value="-1">-- Seleccione --</option>')
+//        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
+//        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
+//});
+//$("#ddl2G").change(function () {
+//    $('#ddl1H-2G option').remove();
+//    var data1 = $("#ddl1H option:selected");
+//    var data2 = $("#ddl2G option:selected");
+//    $("#ddl1H-2G").append('<option value="-1">-- Seleccione --</option>')
+//        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
+//        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
+//});
 
 //cuartos
-$("#ddl1C-2D").change(function () {
-    $('#ddlW49 option').remove();
-    var data1 = $("#ddl1C-2D option:selected");
-    var data2 = $("#ddl1A-2B option:selected");
-    $("#ddlW49").append('<option value="-1">-- Seleccione --</option>')
-        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
-        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
-});
-$("#ddl1A-2B").change(function () {
-    $('#ddlW49 option').remove();
-    var data1 = $("#ddl1C-2D option:selected");
-    var data2 = $("#ddl1A-2B option:selected");
-    $("#ddlW49").append('<option value="-1">-- Seleccione --</option>')
-        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
-        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
-});
+//$("#ddl1C-2D").change(function () {
+//    $('#ddlW49 option').remove();
+//    var data1 = $("#ddl1C-2D option:selected");
+//    var data2 = $("#ddl1A-2B option:selected");
+//    $("#ddlW49").append('<option value="-1">-- Seleccione --</option>')
+//        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
+//        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
+//});
+//$("#ddl1A-2B").change(function () {
+//    $('#ddlW49 option').remove();
+//    var data1 = $("#ddl1C-2D option:selected");
+//    var data2 = $("#ddl1A-2B option:selected");
+//    $("#ddlW49").append('<option value="-1">-- Seleccione --</option>')
+//        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
+//        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
+//});
 
-$("#ddl1B-2A").change(function () {
-    $('#ddlW50 option').remove();
-    var data1 = $("#ddl1B-2A option:selected");
-    var data2 = $("#ddl1D-2C option:selected");
-    $("#ddlW50").append('<option value="-1">-- Seleccione --</option>')
-        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
-        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
-});
-$("#ddl1D-2C").change(function () {
-    $('#ddlW50 option').remove();
-    var data1 = $("#ddl1B-2A option:selected");
-    var data2 = $("#ddl1D-2C option:selected");
-    $("#ddlW50").append('<option value="-1">-- Seleccione --</option>')
-        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
-        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
-});
+//$("#ddl1B-2A").change(function () {
+//    $('#ddlW50 option').remove();
+//    var data1 = $("#ddl1B-2A option:selected");
+//    var data2 = $("#ddl1D-2C option:selected");
+//    $("#ddlW50").append('<option value="-1">-- Seleccione --</option>')
+//        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
+//        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
+//});
+//$("#ddl1D-2C").change(function () {
+//    $('#ddlW50 option').remove();
+//    var data1 = $("#ddl1B-2A option:selected");
+//    var data2 = $("#ddl1D-2C option:selected");
+//    $("#ddlW50").append('<option value="-1">-- Seleccione --</option>')
+//        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
+//        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
+//});
 
-$("#ddl1E-2F").change(function () {
-    $('#ddlW51 option').remove();
-    var data1 = $("#ddl1E-2F option:selected");
-    var data2 = $("#ddl1G-2H option:selected");
-    $("#ddlW51").append('<option value="-1">-- Seleccione --</option>')
-        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
-        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
-});
-$("#ddl1G-2H").change(function () {
-    $('#ddlW51 option').remove();
-    var data1 = $("#ddl1E-2F option:selected");
-    var data2 = $("#ddl1G-2H option:selected");
-    $("#ddlW51").append('<option value="-1">-- Seleccione --</option>')
-        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
-        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
-});
+//$("#ddl1E-2F").change(function () {
+//    $('#ddlW51 option').remove();
+//    var data1 = $("#ddl1E-2F option:selected");
+//    var data2 = $("#ddl1G-2H option:selected");
+//    $("#ddlW51").append('<option value="-1">-- Seleccione --</option>')
+//        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
+//        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
+//});
+//$("#ddl1G-2H").change(function () {
+//    $('#ddlW51 option').remove();
+//    var data1 = $("#ddl1E-2F option:selected");
+//    var data2 = $("#ddl1G-2H option:selected");
+//    $("#ddlW51").append('<option value="-1">-- Seleccione --</option>')
+//        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
+//        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
+//});
 
-$("#ddl1F-2E").change(function () {
-    $('#ddlW52 option').remove();
-    var data1 = $("#ddl1F-2E option:selected");
-    var data2 = $("#ddl1H-2G option:selected");
-    $("#ddlW52").append('<option value="-1">-- Seleccione --</option>')
-        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
-        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
-});
-$("#ddl1H-2G").change(function () {
-    $('#ddlW52 option').remove();
-    var data1 = $("#ddl1F-2E option:selected");
-    var data2 = $("#ddl1H-2G option:selected");
-    $("#ddlW52").append('<option value="-1">-- Seleccione --</option>')
-        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
-        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
-});
+//$("#ddl1F-2E").change(function () {
+//    $('#ddlW52 option').remove();
+//    var data1 = $("#ddl1F-2E option:selected");
+//    var data2 = $("#ddl1H-2G option:selected");
+//    $("#ddlW52").append('<option value="-1">-- Seleccione --</option>')
+//        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
+//        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
+//});
+//$("#ddl1H-2G").change(function () {
+//    $('#ddlW52 option').remove();
+//    var data1 = $("#ddl1F-2E option:selected");
+//    var data2 = $("#ddl1H-2G option:selected");
+//    $("#ddlW52").append('<option value="-1">-- Seleccione --</option>')
+//        .append('<option value="' + data1.val() + '">' + data1.text() + '</option>')
+//        .append('<option value="' + data2.val() + '">' + data2.text() + '</option>');
+//});
 
 //semifinal
 $("#ddlW49").change(function () {
@@ -384,22 +384,26 @@ function ValidateFormBet() {
     var ddl2A = $("#ddl2A  option:selected").val();
     var ddl1D = $("#ddl1D  option:selected").val();
     var ddl2C = $("#ddl2C  option:selected").val();
-    var ddl1E = $("#ddl1E  option:selected").val();
-    var ddl2F = $("#ddl2F  option:selected").val();
-    var ddl1G = $("#ddl1G  option:selected").val();
-    var ddl2H = $("#ddl2H  option:selected").val();
-    var ddl1F = $("#ddl1F  option:selected").val();
-    var ddl2E = $("#ddl2E  option:selected").val();
-    var ddl1H = $("#ddl1H  option:selected").val();
-    var ddl2G = $("#ddl2G  option:selected").val();
-    var ddlW49 = $("#ddl1A-2B  option:selected").val();
-    var ddlW50 = $("#ddl1C-2D  option:selected").val();
-    var ddlW53 = $("#ddl1E-2F  option:selected").val();
-    var ddlW54 = $("#ddl1G-2H  option:selected").val();
-    var ddlW55 = $("#ddl1F-2E  option:selected").val();
-    var ddlW56 = $("#ddl1H-2G  option:selected").val();
-    var ddlW51 = $("#ddl1B-2A  option:selected").val();
-    var ddlW52 = $("#ddl1D-2C  option:selected").val();
+
+
+    //var ddl1E = $("#ddl1E  option:selected").val();
+    //var ddl2F = $("#ddl2F  option:selected").val();
+    //var ddl1G = $("#ddl1G  option:selected").val();
+    //var ddl2H = $("#ddl2H  option:selected").val();
+    //var ddl1F = $("#ddl1F  option:selected").val();
+    //var ddl2E = $("#ddl2E  option:selected").val();
+    //var ddl1H = $("#ddl1H  option:selected").val();
+    //var ddl2G = $("#ddl2G  option:selected").val();
+    //var ddlW49 = $("#ddl1A-2B  option:selected").val();
+    //var ddlW50 = $("#ddl1C-2D  option:selected").val();
+    //var ddlW53 = $("#ddl1E-2F  option:selected").val();
+    //var ddlW54 = $("#ddl1G-2H  option:selected").val();
+    //var ddlW55 = $("#ddl1F-2E  option:selected").val();
+    //var ddlW56 = $("#ddl1H-2G  option:selected").val();
+    //var ddlW51 = $("#ddl1B-2A  option:selected").val();
+    //var ddlW52 = $("#ddl1D-2C  option:selected").val();
+
+
     var ddlW57 = $("#ddlW49  option:selected").val();
     var ddlW58 = $("#ddlW50  option:selected").val();
     var ddlW59 = $("#ddlW51  option:selected").val();
@@ -413,10 +417,13 @@ function ValidateFormBet() {
 
     if (ddl1C === "-1" || ddl2D === "-1" || ddl1A === "-1" || ddl2B === "-1"
         || ddl1B === "-1" || ddl2A === "-1" || ddl1D === "-1" || ddl2C === "-1"
-        || ddl1E === "-1" || ddl2F === "-1" || ddl1G === "-1" || ddl2H === "-1"
-        || ddl1F === "-1" || ddl2E === "-1" || ddl1H === "-1" || ddl2G === "-1"
-        || ddlW49 === "-1" || ddlW50 === "-1" || ddlW53 === "-1" || ddlW54 === "-1"
-        || ddlW55 === "-1" || ddlW56 === "-1" || ddlW51 === "-1" || ddlW52 === "-1"
+
+
+        //|| ddl1E === "-1" || ddl2F === "-1" || ddl1G === "-1" || ddl2H === "-1"
+        //|| ddl1F === "-1" || ddl2E === "-1" || ddl1H === "-1" || ddl2G === "-1"
+        //|| ddlW49 === "-1" || ddlW50 === "-1" || ddlW53 === "-1" || ddlW54 === "-1"
+        //|| ddlW55 === "-1" || ddlW56 === "-1" || ddlW51 === "-1" || ddlW52 === "-1"
+
         || ddlW57 === "-1" || ddlW58 === "-1" || ddlW59 === "-1" || ddlW60 === "-1"
         || ddlL61 === "-1" || ddlL62 === "-1" || ddlW61 === "-1" || ddlW62 === "-1"
         || ddlWin === "-1" || ddltercero === "-1") {
@@ -438,22 +445,22 @@ function GetData() {
     var ddl2A = $("#ddl2A  option:selected").val();
     var ddl1D = $("#ddl1D  option:selected").val();
     var ddl2C = $("#ddl2C  option:selected").val();
-    var ddl1E = $("#ddl1E  option:selected").val();
-    var ddl2F = $("#ddl2F  option:selected").val();
-    var ddl1G = $("#ddl1G  option:selected").val();
-    var ddl2H = $("#ddl2H  option:selected").val();
-    var ddl1F = $("#ddl1F  option:selected").val();
-    var ddl2E = $("#ddl2E  option:selected").val();
-    var ddl1H = $("#ddl1H  option:selected").val();
-    var ddl2G = $("#ddl2G  option:selected").val();
-    var ddlW49 = $("#ddl1A-2B  option:selected").val();
-    var ddlW50 = $("#ddl1C-2D  option:selected").val();
-    var ddlW53 = $("#ddl1E-2F  option:selected").val();
-    var ddlW54 = $("#ddl1G-2H  option:selected").val();
-    var ddlW55 = $("#ddl1F-2E  option:selected").val();
-    var ddlW56 = $("#ddl1H-2G  option:selected").val();
-    var ddlW51 = $("#ddl1B-2A  option:selected").val();
-    var ddlW52 = $("#ddl1D-2C  option:selected").val();
+    //var ddl1E = $("#ddl1E  option:selected").val();
+    //var ddl2F = $("#ddl2F  option:selected").val();
+    //var ddl1G = $("#ddl1G  option:selected").val();
+    //var ddl2H = $("#ddl2H  option:selected").val();
+    //var ddl1F = $("#ddl1F  option:selected").val();
+    //var ddl2E = $("#ddl2E  option:selected").val();
+    //var ddl1H = $("#ddl1H  option:selected").val();
+    //var ddl2G = $("#ddl2G  option:selected").val();
+    //var ddlW49 = $("#ddl1A-2B  option:selected").val();
+    //var ddlW50 = $("#ddl1C-2D  option:selected").val();
+    //var ddlW53 = $("#ddl1E-2F  option:selected").val();
+    //var ddlW54 = $("#ddl1G-2H  option:selected").val();
+    //var ddlW55 = $("#ddl1F-2E  option:selected").val();
+    //var ddlW56 = $("#ddl1H-2G  option:selected").val();
+    //var ddlW51 = $("#ddl1B-2A  option:selected").val();
+    //var ddlW52 = $("#ddl1D-2C  option:selected").val();
     var ddlW57 = $("#ddlW49  option:selected").val();
     var ddlW58 = $("#ddlW51  option:selected").val();
     var ddlW59 = $("#ddlW50  option:selected").val();
@@ -467,23 +474,23 @@ function GetData() {
 
     var markers;
     return markers = [
-        { IdMatch: 1, IdTeam1: ddl1A, IdTeam2: ddl2B },
-        { IdMatch: 2, IdTeam1: ddl1C, IdTeam2: ddl2D },
-        { IdMatch: 3, IdTeam1: ddl1E, IdTeam2: ddl2F },
-        { IdMatch: 4, IdTeam1: ddl1G, IdTeam2: ddl2H },
-        { IdMatch: 5, IdTeam1: ddl1B, IdTeam2: ddl2A },
-        { IdMatch: 6, IdTeam1: ddl1D, IdTeam2: ddl2C },
-        { IdMatch: 7, IdTeam1: ddl1F, IdTeam2: ddl2E },
-        { IdMatch: 8, IdTeam1: ddl1H, IdTeam2: ddl2G },
-        { IdMatch: 9, IdTeam1: ddlW49, IdTeam2: ddlW50 },
-        { IdMatch: 10, IdTeam1: ddlW53, IdTeam2: ddlW54 },
-        { IdMatch: 11, IdTeam1: ddlW51, IdTeam2: ddlW52 },
-        { IdMatch: 12, IdTeam1: ddlW55, IdTeam2: ddlW56 },
-        { IdMatch: 13, IdTeam1: ddlW57, IdTeam2: ddlW58 },
-        { IdMatch: 14, IdTeam1: ddlW59, IdTeam2: ddlW60 },
-        { IdMatch: 15, IdTeam1: ddlL61, IdTeam2: ddlL62 },
-        { IdMatch: 16, IdTeam1: ddlW61, IdTeam2: ddlW62 },
-        { IdMatch: 17, IdTeam1: ddltercero, IdTeam2: ddltercero },
-        { IdMatch: 18, IdTeam1: ddlWin, IdTeam2: ddlWin }
+        { IdMatch: 19, IdTeam1: ddl1A, IdTeam2: ddl2B },
+        { IdMatch: 20, IdTeam1: ddl1C, IdTeam2: ddl2D },
+        //{ IdMatch: 3, IdTeam1: ddl1E, IdTeam2: ddl2F },
+        //{ IdMatch: 4, IdTeam1: ddl1G, IdTeam2: ddl2H },
+        { IdMatch: 21, IdTeam1: ddl1B, IdTeam2: ddl2A },
+        { IdMatch: 22, IdTeam1: ddl1D, IdTeam2: ddl2C },
+        //{ IdMatch: 7, IdTeam1: ddl1F, IdTeam2: ddl2E },
+        //{ IdMatch: 8, IdTeam1: ddl1H, IdTeam2: ddl2G },
+        //{ IdMatch: 9, IdTeam1: ddlW49, IdTeam2: ddlW50 },
+        //{ IdMatch: 10, IdTeam1: ddlW53, IdTeam2: ddlW54 },
+        //{ IdMatch: 11, IdTeam1: ddlW51, IdTeam2: ddlW52 },
+        //{ IdMatch: 12, IdTeam1: ddlW55, IdTeam2: ddlW56 },
+        { IdMatch: 23, IdTeam1: ddlW57, IdTeam2: ddlW58 },
+        { IdMatch: 24, IdTeam1: ddlW59, IdTeam2: ddlW60 },
+        { IdMatch: 25, IdTeam1: ddlL61, IdTeam2: ddlL62 },
+        { IdMatch: 26, IdTeam1: ddlW61, IdTeam2: ddlW62 },
+        { IdMatch: 27, IdTeam1: ddltercero, IdTeam2: ddltercero },
+        { IdMatch: 28, IdTeam1: ddlWin, IdTeam2: ddlWin }
     ];
 }

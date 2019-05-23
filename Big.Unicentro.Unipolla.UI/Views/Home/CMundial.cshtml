@@ -4,7 +4,7 @@
 @{
     ViewBag.Title = "Polla Unicentro Medellin";
 
-    DateTime finishDateTime = Convert.ToDateTime(ConfigurationManager.AppSettings.Get("FinishDate"));
+    DateTime finishDateTime = ViewBag.fechaLimite;
 
     List<UNIPOLLA_TEAM> listTeam = ViewBag.Teams;
     List<UNIPOLLA_BET> listBet = ViewBag.Bets;
@@ -1114,7 +1114,13 @@
         @if (DateTime.Now > finishDateTime || listBet.Count > 0)
     {
         @Html.Raw("$('select').attr('disabled', 'disabled');")
-    }
+          
+        }
+          @if (DateTime.Now > finishDateTime && listBet.Count == 0)
+    {
+        @Html.Raw("alert('Fecha limite de registro de apuestas ya finalizo');")
+            
+        }
     });
 </script>
 <script src="@Url.Content("~/Content/js/develop.js")"></script>

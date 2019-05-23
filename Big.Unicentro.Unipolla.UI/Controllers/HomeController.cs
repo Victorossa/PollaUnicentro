@@ -21,12 +21,14 @@ namespace Big.Unicentro.Unipolla.UI.Controllers
         public ActionResult Index()
         {
             ClsResponse<int> TournamentsID = TournamentBLL.GetTournamentID();
+           
             ClsResponse<List<UNIPOLLA_TEAM>> objTeams = MatchBLL.GetTeams(TournamentsID.Result);
             ClsResponse<List<UNIPOLLA_BET>> objBets = BetBLL.GetBets(SessionHelper.IdCurrentCodesWinner);
+            ClsResponse<List<UNIPOLLA_TOURNAMENT>> Tournaments = TournamentBLL.GetTournamentsList();
+            ViewBag.fechaLimite = Tournaments.Result.FirstOrDefault().REGISTRATION_DEADLINE;
 
 
-
-            ViewBag.Teams = objTeams.Result;
+                ViewBag.Teams = objTeams.Result;
             if (objBets.Result == null)
             {
                 objBets.Result = new List<UNIPOLLA_BET>();
@@ -77,7 +79,8 @@ namespace Big.Unicentro.Unipolla.UI.Controllers
             ClsResponse<bool> objResponse = new ClsResponse<bool>();
             try
             {
-                if (DateTime.Now < Convert.ToDateTime(ConfigurationManager.AppSettings.Get("FinishDate")))
+                ClsResponse<List<UNIPOLLA_TOURNAMENT>> Tournaments = TournamentBLL.GetTournamentsList();
+                if (DateTime.Now < Tournaments.Result.FirstOrDefault().REGISTRATION_DEADLINE)
                 {
 
 

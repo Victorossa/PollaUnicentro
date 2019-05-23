@@ -4,7 +4,7 @@
 @{
     ViewBag.Title = "Polla Unicentro Medellin";
 
-    DateTime finishDateTime = Convert.ToDateTime(ConfigurationManager.AppSettings.Get("FinishDate"));
+    DateTime finishDateTime = ViewBag.fechaLimite;
 
     List<UNIPOLLA_TEAM> listTeam = ViewBag.Teams;
     List<UNIPOLLA_BET> listBet = ViewBag.Bets;
@@ -25,7 +25,7 @@
     </div>
     <div class="split split-one">
         <div class="round round-one current">
-            <div class="round-details">Octavos de final</div>
+            <div class="round-details">Cuartos de final</div>
             <div class="flex-mobile">
                 @*Div de izquierda*@
                 <ul class="matchup matchup-red">
@@ -174,7 +174,7 @@
                     <img class="blue bttm" src="@Url.Content("~/Content/images/blue_top.png")" alt="">
                 </ul>
                 @*Div de izquierda*@
-                <ul class="matchup matchup-red">
+                @*<ul class="matchup matchup-red">
                     <div class="blue top">
                         <span>3</span>
                     </div>
@@ -308,16 +308,16 @@
                     </li>
 
                     <img class="blue bttm" src="@Url.Content("~/Content/images/blue_top.png")" alt="">
-                </ul>
+                </ul>*@
             </div>
 
 
 
         </div>	<!-- END ROUND ONE -->
         <div class="round round-two">
-            <div class="round-details">Cuartos de Finales</div>
+            @*<div class="round-details">Cuartos de Finales</div>*@
             <div class="flex-mobile">
-                <ul class="matchup matchup-blue">
+                @*<ul class="matchup matchup-blue">
                     <div class="yellow top">
                         <span></span>
                     </div>
@@ -420,7 +420,7 @@
                         </select><input type="text" value="@point2" class="score">
                     </li>
                     <img class="yellow bttm" src="@Url.Content("~/Content/images/yellow_top.png")" alt="">
-                </ul>
+                </ul>*@
             </div>
 
         </div>	<!-- END ROUND TWO -->
@@ -499,7 +499,7 @@
                             <option value="-1">-- Seleccione --</option>}
                         @{
 
-                            lTeam = listBet.FirstOrDefault(b => b.ID_MATCH == 16);
+                            lTeam = listBet.FirstOrDefault(b => b.ID_MATCH == 26);
                             if (lTeam != null)
                             {
                                 idTeam = lTeam.ID_TEAM_1;
@@ -579,7 +579,7 @@
                             <option value="-1">-- Seleccione --</option>}
                         @{
 
-                            lTeam = listBet.FirstOrDefault(b => b.ID_MATCH == 15);
+                            lTeam = listBet.FirstOrDefault(b => b.ID_MATCH == 25);
                             if (lTeam != null)
                             {
                                 idTeam = lTeam.ID_TEAM_1;
@@ -623,7 +623,7 @@
                             <option value="-1">-- Seleccione --</option>}
                         @{
 
-                            lTeam = listBet.FirstOrDefault(b => b.ID_MATCH == 17);
+                            lTeam = listBet.FirstOrDefault(b => b.ID_MATCH == 27);
                             if (lTeam != null)
                             {
                                 idTeam = lTeam.ID_TEAM_1;
@@ -714,9 +714,9 @@
             </div>
         </div>	<!-- END ROUND THREE -->
         <div class="round round-two">
-            <div class="round-details">Cuartos de Finales</div>
+            @*<div class="round-details">Cuartos de Finales</div>*@
             <div class="flex-mobile">
-                <ul class="matchup matchup-blue">
+                @*<ul class="matchup matchup-blue">
                     <div class="yellow top">
                         <span>11</span>
                     </div>
@@ -815,11 +815,11 @@
                         </select><input type="text" value="@point2" class="score">
                     </li>
                     <img class="blue bttm" src="@Url.Content("~/Content/images/yellow_top.png")" alt="">
-                </ul>
+                </ul>*@
             </div>
         </div>	<!-- END ROUND TWO -->
         <div class="round round-one current">
-            <div class="round-details">Octavos de final</div>
+            <div class="round-details">Cuartos de final</div>
             <div class="flex-mobile">
                 <ul class="matchup matchup-red">
                     <div class="blue top">
@@ -956,7 +956,7 @@
                     </li>
                     <img class="blue bttm" src="@Url.Content("~/Content/images/blue_top.png")" alt="">
                 </ul>
-                <ul class="matchup matchup-red">
+                @*<ul class="matchup matchup-red">
                     <div class="blue top">
                         <span>7</span>
                     </div>
@@ -1089,7 +1089,7 @@
                         </select><input type="text" value="@point2" class="score score2">
                     </li>
                     <img class="blue bttm" src="@Url.Content("~/Content/images/blue_top.png")" alt="">
-                </ul>
+                </ul>*@
             </div>
         </div>
         @if (DateTime.Now < finishDateTime && listBet.Count <= 0)
@@ -1115,6 +1115,11 @@
     {
         @Html.Raw("$('select').attr('disabled', 'disabled');")
     }
+         @if (DateTime.Now > finishDateTime && listBet.Count == 0)
+    {
+        @Html.Raw("alert('Fecha limite de registro de apuestas ya finalizo');")
+            
+        }
     });
 </script>
 <script src="@Url.Content("~/Content/js/develop1.js")"></script>
