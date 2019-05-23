@@ -1,0 +1,46 @@
+.stacktable { width: 100%; }
+.st-head-row { padding-top: 1em; }
+.st-head-row.st-head-row-main { font-size: 1.5em; padding-top: 0; }
+.st-key { width: 49%; text-align: right; padding-right: 1%; }
+.st-val { width: 49%; padding-left: 1%; }
+
+
+
+/* RESPONSIVE EXAMPLE */
+
+.stacktable.large-only { display: table; }
+.stacktable.small-only { display: none; }
+
+@media (max-width: 800px) {
+  .stacktable.large-only { display: none; }
+  .stacktable.small-only { display: table; }
+}
+
+@media (max-width: 580px) {
+   #inscirpciones table th{
+       /*width: 320px;
+       display: block;
+       padding: 0;*/
+   } 
+    table .inscribase td:nth-child(2){
+        font-size: 18px !important;
+        padding-left: 7px;
+        width: 160px;
+        float: none;
+        text-align: center;
+        left: 0;
+        display: block;
+    }
+    
+    table .inscribase td:nth-child(2) small{
+        display: none;
+    }
+    
+    .inscribase .st-key{
+        display: none;
+    }
+    
+    ul.rslides li img, ul.imagenes-2013 li img{
+        width: 100% !important;
+    }
+}

@@ -18,12 +18,31 @@ namespace Big.Unicentro.Unipolla.UI.Controllers
 
         public ActionResult terminos_condiciones()
         {
+            ClsResponse<int> TournamentsID = TournamentBLL.GetTournamentID();
+
+            if (TournamentsID.Result == 1)
+            {
+                return View("Terms");
+            }
+            if (TournamentsID.Result == 2)
+            {
+                return View("TermsCAmerica");
+            }
             return View("Terms");
         }
 
         // GET: Account
         public ActionResult Login()
         {
+            ClsResponse<int> TournamentsID = TournamentBLL.GetTournamentID();
+            if (TournamentsID.Result == 1)
+            {
+                return View("Login");
+            }
+            if (TournamentsID.Result == 2)
+            {
+                return View("loginCAmerica");
+            }
             return View("");
         }
 
@@ -35,7 +54,7 @@ namespace Big.Unicentro.Unipolla.UI.Controllers
 
             ClsResponse<List<UNIPOLLA_TOURNAMENT>> objTournament = TournamentBLL.GetTournamentsList();
 
-            if (objTournament.Result.Count == 1)
+            if (objTournament.Result != null && objTournament.Result.Count == 1)
             {
                 ClsResponse<UNIPOLLA_CODES> objPerson = CodeBLL.GetCode(code);
 

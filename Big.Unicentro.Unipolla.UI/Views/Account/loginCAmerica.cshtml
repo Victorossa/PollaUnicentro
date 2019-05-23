@@ -1,0 +1,76 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+
+<html>
+<head>
+
+    <script language="javascript" type="text/javascript">
+
+        function Solo_Numerico(variable) {
+            Numer = parseInt(variable);
+            if (isNaN(Numer)) {
+                return "";
+            }
+            return Numer;
+        }
+        function ValNumero(Control) {
+            Control.value = Solo_Numerico(Control.value);
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1">
+    <title>.: Unicentro :.</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="@Url.Content("~/ContentCAmerica/resources/assets/css/style.css")">
+</head>
+<body class="login">
+    <header></header>
+    <div class="container"<div class="content-home">
+
+    <div class="part1">
+    <img src="@Url.Content("~/ContentCAmerica/resources/assets/images/imagen_home.png")" alt="">
+    <img class="loteria" src="@Url.Content("~/ContentCAmerica/resources/assets/images/logo_loteria.png")" alt="">
+    </div>
+    <div class="part2">
+    <form class="form-login" action="" method="post">
+    <input id="txtDocument" type="text" name="txtDocument" value="" placeholder="CC:" onkeyUp=" return ValNumero(this);">
+    <input id="txtCode" type="text" name="txtCode" value="" placeholder="INGRESA TU CÓDIGO">
+    <div class="campo">
+    @*<input type="checkbox" name="" value="">*@
+    <span><a target="_blank" href="@Url.Action("terminos_condiciones")"> T&eacute;rminos y Condiciones</a></span>
+    </div>
+    @*<a target="_blank" href="@Url.Action("")"></a>*@
+    <input type="submit" id="btnEnviar" name="btnEnviar" value="ingresar">
+    </form>
+    </div></div></div><div class="alerta"><div class="alertint"><a class="cerraralerta">X</a> <span class="textalert"></span></div></div>
+    <footer>
+        <div class="content-footer">
+            <img src="@Url.Content("~/ContentCAmerica/resources/assets/images/logo_footer.png")" alt=""><div class="redes">
+                <a href="#">
+                    <img src="@Url.Content("~/ContentCAmerica/resources/assets/images/fb.png")" alt="">
+                </a><a href="#"><img src="@Url.Content("~/ContentCAmerica/resources/assets/images/ins.png")" alt=""> </a><a href="#">
+                    <img src="@Url.Content("~/ContentCAmerica/resources/assets/images/tw.png")" alt="">
+                </a><a href="#"><img src="@Url.Content("~/ContentCAmerica/resources/assets/images/yt.png")" alt=""> </a>
+                <a href="#">www.unicentromedellin.com.co</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="@Url.Content("~/ContentCAmerica/resources/assets/js/vendor/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/ContentCAmerica/resources/assets/js/vendor/jquery.bxslider.min.js")"></script>
+    <script src="@Url.Content("~/ContentCAmerica/resources/assets/js/vendor/jquery-scrolltofixed-min.js")"></script>
+    <script src="@Url.Content("~/ContentCAmerica/resources/assets/js/app/app.app-min.js")">
+    </script>
+    @* @Scripts.Render("~/bundles/jquery")*@
+    <script src="@Url.Content("~/Content/js/developBase.js")"></script>
+    <script src="@Url.Content("~/Content/js/develop_login.js")"></script>
+</body>
+</html>

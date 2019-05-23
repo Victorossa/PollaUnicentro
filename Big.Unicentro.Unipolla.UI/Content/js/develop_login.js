@@ -1,5 +1,9 @@
-﻿$("#btnEnviar").click(function () {
-   
+﻿$("#btnEnviar").submit(function (e) {
+    return false;
+});
+
+$("#btnEnviar").click(function (event) {
+    event.preventDefault();
     var documento = $("#txtDocument").val();
     var codigo = $("#txtCode").val();
 
