@@ -173,18 +173,18 @@
     <Content Include="ContentCAmerica\resources\assets\images\blue_top.png" />
     <Content Include="ContentCAmerica\resources\assets\images\fb.png" />
     <Content Include="ContentCAmerica\resources\assets\images\final.png" />
-    <Content Include="ContentCAmerica\resources\assets\images\flags\flags_03.png" />
-    <Content Include="ContentCAmerica\resources\assets\images\flags\flags_06.png" />
-    <Content Include="ContentCAmerica\resources\assets\images\flags\flags_08.png" />
-    <Content Include="ContentCAmerica\resources\assets\images\flags\flags_13.png" />
-    <Content Include="ContentCAmerica\resources\assets\images\flags\flags_14.png" />
-    <Content Include="ContentCAmerica\resources\assets\images\flags\flags_15.png" />
-    <Content Include="ContentCAmerica\resources\assets\images\flags\flags_19.png" />
-    <Content Include="ContentCAmerica\resources\assets\images\flags\flags_20.png" />
-    <Content Include="ContentCAmerica\resources\assets\images\flags\flags_21.png" />
-    <Content Include="ContentCAmerica\resources\assets\images\flags\flags_25.png" />
-    <Content Include="ContentCAmerica\resources\assets\images\flags\flags_26.png" />
-    <Content Include="ContentCAmerica\resources\assets\images\flags\flags_27.png" />
+    <Content Include="ContentCAmerica\resources\assets\images\flags\brazil.png" />
+    <Content Include="ContentCAmerica\resources\assets\images\flags\argentina.png" />
+    <Content Include="ContentCAmerica\resources\assets\images\flags\uruguay.png" />
+    <Content Include="ContentCAmerica\resources\assets\images\flags\bolivia.png" />
+    <Content Include="ContentCAmerica\resources\assets\images\flags\colombia.png" />
+    <Content Include="ContentCAmerica\resources\assets\images\flags\ecuador.png" />
+    <Content Include="ContentCAmerica\resources\assets\images\flags\venezuela.png" />
+    <Content Include="ContentCAmerica\resources\assets\images\flags\paraguay.png" />
+    <Content Include="ContentCAmerica\resources\assets\images\flags\japon.png" />
+    <Content Include="ContentCAmerica\resources\assets\images\flags\peru.png" />
+    <Content Include="ContentCAmerica\resources\assets\images\flags\qatar.png" />
+    <Content Include="ContentCAmerica\resources\assets\images\flags\chile.png" />
     <Content Include="ContentCAmerica\resources\assets\images\imagen_home.png" />
     <Content Include="ContentCAmerica\resources\assets\images\ingresar_btn.png" />
     <Content Include="ContentCAmerica\resources\assets\images\ins.png" />
@@ -390,6 +390,7 @@
     <Content Include="Views\Shared\_Footer3.cshtml" />
     <Content Include="Views\Account\loginCAmerica.cshtml" />
     <Content Include="Views\Shared\TermsCAmerica.cshtml" />
+    <Content Include="Views\Home\CAmerica2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

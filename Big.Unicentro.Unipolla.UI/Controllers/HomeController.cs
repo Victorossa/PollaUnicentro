@@ -43,7 +43,7 @@ namespace Big.Unicentro.Unipolla.UI.Controllers
             }
             if (TournamentsID.Result == 2)
             {
-                return View("CAmerica");
+                return View("CAmerica2");
             }
             if (TournamentsID.Result == 3)
             {
