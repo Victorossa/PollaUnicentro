@@ -1,0 +1,678 @@
+﻿@using System.Configuration
+@using Big.Unicentro.Unipolla.DataAccess.Entities
+@using Big.Unicentro.Unipolla.DataAccess.Model
+@{
+    Layout = null;
+    ViewBag.Title = "Polla Unicentro Medellin";
+
+    DateTime finishDateTime = ViewBag.fechaLimite;
+
+    List<UNIPOLLA_TEAM> listTeam = ViewBag.Teams;
+    List<UNIPOLLA_BET> listBet = ViewBag.Bets;
+    var idTeam = 0;
+    var idTeam2 = 0;
+    var point1 = 0;
+    var point2 = 0;
+    UNIPOLLA_BET lTeam;
+
+
+}
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1">
+    <title>.: Unicentro :.</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="@Url.Content("~/ContentCAmerica/resources/assets/css/style.css")">
+</head>
+<body class="mapa">
+    <header></header>
+    <div class="container">
+        <div class="content-home">
+            <div class="wrapper-general">
+                <img class="logo-mapa" src="@Url.Content("~/ContentCAmerica/resources/assets/images/logo.png")" alt="">
+                <div class="wrapper">
+                    <div class="contentBody">
+                        <section class="polla">
+                            <div id="bracket">
+                                <div class="container">
+                                    <div class="split split-one">
+                                        <div class="round round-two">
+                                            <div class="round-details purple">Cuartos de Finales</div>
+                                            <div class="flex-mobile">
+                                                <ul class="matchup matchup-blue">
+                                                    <li class="team team-top">
+                                                        <label style="color: white">1A</label>
+                                                        <select id="ddl1A" class="name name2">
+                                                            @if (listBet.Count <= 0)
+                                                            {
+                                                                <option value="-1">-- Seleccione --</option>}
+                                                            @{
+
+                                                                lTeam = listBet.FirstOrDefault(b => b.ID_MATCH == 19);
+                                                                if (lTeam != null)
+                                                                {
+                                                                    idTeam = lTeam.ID_TEAM_1;
+                                                                    idTeam2 = lTeam.ID_TEAM_2;
+                                                                    point1 = lTeam.POINTS_TEAM_1 ?? 0;
+                                                                    point2 = lTeam.POINTS_TEAM_2 ?? 0;
+                                                                }
+
+                                                                if (idTeam == 0)
+                                                                {
+                                                                    foreach (var team in listTeam.Where(t => t.GROUP_TEAM == "A"))
+                                                                    {
+
+                                                                        <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                    }
+                                                                }
+                                                                else
+                                                                {
+                                                                    foreach (var team in listTeam.Where(t => t.ID_TEAM == idTeam))
+                                                                    {
+
+                                                                        <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                    }
+                                                                }
+                                                            }
+                                                        </select>
+                                                        <input type="text" value="@point1" class="score score2">
+                                                    </li>
+                                                    <span class="vs">VS</span>
+                                                    <li class="team team-bottom">
+                                                        <label style="width: 40px; display: inline-block;">3B/C</label>
+                                                        <select id="ddl2B" class="name name2" style="width: 58%">
+                                                            @if (listBet.Count <= 0)
+                                                            {
+                                                                <option value="-1">-- Seleccione --</option>}
+                                                            @if (idTeam2 == 0)
+                                                            {
+                                                                foreach (var team in listTeam.Where(t => t.GROUP_TEAM == "B" || t.GROUP_TEAM == "C"))
+                                                                {
+
+                                                                    <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                }
+                                                            }
+                                                            else
+                                                            {
+                                                                foreach (var team in listTeam.Where(t => t.ID_TEAM == idTeam2))
+                                                                {
+
+                                                                    <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                }
+                                                            }
+                                                        </select><input type="text" value="@point2" class="score">
+                                                    </li>
+                                                </ul>
+                                                <ul class="matchup matchup-blue">
+                                                    <li class="team team-top">
+                                                        <label style="color: white">2A</label>
+                                                        <select id="ddl1C" class="name name2">
+                                                            @if (listBet.Count <= 0)
+                                                            {
+                                                                <option value="-1">-- Seleccione --</option>}
+                                                            @{
+
+                                                                lTeam = listBet.FirstOrDefault(b => b.ID_MATCH == 20);
+                                                                if (lTeam != null)
+                                                                {
+                                                                    idTeam = lTeam.ID_TEAM_1;
+                                                                    idTeam2 = lTeam.ID_TEAM_2;
+                                                                    point1 = lTeam.POINTS_TEAM_1 ?? 0;
+                                                                    point2 = lTeam.POINTS_TEAM_2 ?? 0;
+                                                                }
+
+                                                                if (idTeam == 0)
+                                                                {
+                                                                    foreach (var team in listTeam.Where(t => t.GROUP_TEAM == "A"))
+                                                                    {
+
+                                                                        <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                    }
+                                                                }
+                                                                else
+                                                                {
+                                                                    foreach (var team in listTeam.Where(t => t.ID_TEAM == idTeam))
+                                                                    {
+
+                                                                        <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                    }
+                                                                }
+                                                            }
+
+
+                                                        </select>
+                                                        <input type="text" value="@point1" class="score score2">
+                                                    </li>
+                                                    <span class="vs">VS</span>
+                                                    <li class="team team-bottom">
+                                                        <label style="color: white">2B</label>
+                                                        <select id="ddl2D" class="name name2">
+
+
+                                                            @if (listBet.Count <= 0)
+                                                            {
+                                                                <option value="-1">-- Seleccione --</option>}
+
+                                                            @if (idTeam2 == 0)
+                                                            {
+                                                                foreach (var team in listTeam.Where(t => t.GROUP_TEAM == "B"))
+                                                                {
+
+                                                                    <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                }
+                                                            }
+                                                            else
+                                                            {
+                                                                foreach (var team in listTeam.Where(t => t.ID_TEAM == idTeam2))
+                                                                {
+
+                                                                    <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                }
+                                                            }
+
+                                                        </select><input type="text" value="@point2" class="score score2">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="round round-three">
+                                            <div class="round-details green">Semifinal</div>
+                                            <div class="flex-mobile">
+                                                <ul class="matchup matchup-red">
+                                                    <li class="team team-top">
+                                                        <select id="ddlW49" class="name">
+                                                            @if (listBet.Count <= 0)
+                                                            {
+                                                                <option value="-1">-- Seleccione --</option>}
+                                                            @{
+
+                                                                lTeam = listBet.FirstOrDefault(b => b.ID_MATCH == 23);
+                                                                if (lTeam != null)
+                                                                {
+                                                                    idTeam = lTeam.ID_TEAM_1;
+                                                                    idTeam2 = lTeam.ID_TEAM_2;
+                                                                    point1 = lTeam.POINTS_TEAM_1 ?? 0;
+                                                                    point2 = lTeam.POINTS_TEAM_2 ?? 0;
+                                                                }
+
+                                                                if (idTeam != 0)
+                                                                {
+                                                                    foreach (var team in listTeam.Where(t => t.ID_TEAM == idTeam))
+                                                                    {
+
+                                                                        <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                    }
+                                                                }
+
+                                                            }
+                                                        </select><input type="text" value="@point1" class="score">
+                                                    </li>
+                                                    <span class="vs">VS</span>
+                                                    <li class="team team-bottom">
+                                                        <select id="ddlW51" class="name">
+                                                            @if (listBet.Count <= 0)
+                                                            {
+                                                                <option value="-1">-- Seleccione --</option>}
+                                                            @if (idTeam2 != 0)
+                                                            {
+                                                                foreach (var team in listTeam.Where(t => t.ID_TEAM == idTeam2))
+                                                                {
+
+                                                                    <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                }
+                                                            }
+                                                        </select><input type="text" value="@point2" class="score">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="champion">
+                                        <div class="final">
+                                            <div class="round-details yellow">FINAL</div>
+                                            <ul class="matchup matchup-red">
+                                                <div class="top"></div>
+                                                <li class="team team-top">
+                                                    <select id="ddlW61" class="name">
+                                                        @if (listBet.Count <= 0)
+                                                        {
+                                                            <option value="-1">-- Seleccione --</option>}
+                                                        @{
+
+                                                            lTeam = listBet.FirstOrDefault(b => b.ID_MATCH == 26);
+                                                            if (lTeam != null)
+                                                            {
+                                                                idTeam = lTeam.ID_TEAM_1;
+                                                                idTeam2 = lTeam.ID_TEAM_2;
+                                                                point1 = lTeam.POINTS_TEAM_1 ?? 0;
+                                                                point2 = lTeam.POINTS_TEAM_2 ?? 0;
+                                                            }
+
+                                                            if (idTeam != 0)
+                                                            {
+                                                                foreach (var team in listTeam.Where(t => t.ID_TEAM == idTeam))
+                                                                {
+
+                                                                    <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                }
+                                                            }
+
+                                                        }
+                                                    </select><input type="text" value="@point1" class="score">
+                                                </li>
+                                                <span class="vs">VS</span>
+                                                <li class="team team-bottom">
+                                                    <select id="ddlW62" class="name">
+                                                        @if (listBet.Count <= 0)
+                                                        {
+                                                            <option value="-1">-- Seleccione --</option>}
+                                                        @if (idTeam2 != 0)
+                                                        {
+                                                            foreach (var team in listTeam.Where(t => t.ID_TEAM == idTeam2))
+                                                            {
+
+                                                                <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                            }
+                                                        }
+                                                    </select><input type="text" value="@point2" class="score">
+                                                </li>
+
+                                                <div class="round-details yellow">-- CAMPEÓN --</div>
+                                                <li class="team team-bottom">
+                                                    <select id="ddlWin" class="name">
+                                                        @if (listBet.Count <= 0)
+                                                        {
+                                                            <option value="-1">-- Seleccione --</option>}
+                                                        @{
+
+                                                            lTeam = listBet.FirstOrDefault(b => b.ID_MATCH == 18);
+                                                            if (lTeam != null)
+                                                            {
+                                                                idTeam = lTeam.ID_TEAM_1;
+                                                                idTeam2 = lTeam.ID_TEAM_2;
+                                                                point1 = lTeam.POINTS_TEAM_1 ?? 0;
+                                                                point2 = lTeam.POINTS_TEAM_2 ?? 0;
+                                                            }
+
+                                                            if (idTeam != 0)
+                                                            {
+                                                                foreach (var team in listTeam.Where(t => t.ID_TEAM == idTeam))
+                                                                {
+
+                                                                    <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                }
+                                                            }
+
+                                                        }
+                                                    </select>
+                                                    <input type="text" value="@point1" class="score score-campeon">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="semifinal">
+                                            <div class="round-details blue">TERCER LUGAR</div>
+                                            <ul class="matchup matchup-red">
+                                                <div class="top">
+
+                                                </div>
+                                                <li class="team team-bottom">
+                                                    <select id="ddltercero" class="name">
+                                                        @if (listBet.Count <= 0)
+                                                        {
+                                                            <option value="-1">-- Seleccione --</option>}
+                                                        @{
+
+                                                            lTeam = listBet.FirstOrDefault(b => b.ID_MATCH == 27);
+                                                            if (lTeam != null)
+                                                            {
+                                                                idTeam = lTeam.ID_TEAM_1;
+                                                                idTeam2 = lTeam.ID_TEAM_2;
+                                                                point1 = lTeam.POINTS_TEAM_1 ?? 0;
+                                                                point2 = lTeam.POINTS_TEAM_2 ?? 0;
+                                                            }
+
+                                                            if (idTeam != 0)
+                                                            {
+                                                                foreach (var team in listTeam.Where(t => t.ID_TEAM == idTeam))
+                                                                {
+
+                                                                    <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                }
+                                                            }
+
+                                                        }
+                                                    </select>
+                                                    <input type="text" value="@point1" class="score score-campeon">
+                                                </li>
+                                                <li class="team team-top">
+                                                    <select id="ddlL61" class="name">
+                                                        @if (listBet.Count <= 0)
+                                                        {
+                                                            <option value="-1">-- Seleccione --</option>}
+                                                        @{
+
+                                                            lTeam = listBet.FirstOrDefault(b => b.ID_MATCH == 25);
+                                                            if (lTeam != null)
+                                                            {
+                                                                idTeam = lTeam.ID_TEAM_1;
+                                                                idTeam2 = lTeam.ID_TEAM_2;
+                                                                point1 = lTeam.POINTS_TEAM_1 ?? 0;
+                                                                point2 = lTeam.POINTS_TEAM_2 ?? 0;
+                                                            }
+
+                                                            if (idTeam != 0)
+                                                            {
+                                                                foreach (var team in listTeam.Where(t => t.ID_TEAM == idTeam))
+                                                                {
+
+                                                                    <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                }
+                                                            }
+
+                                                        }
+                                                    </select><input type="text" value="@point1" class="score">
+                                                </li>
+                                                <span class="vs">VS</span>
+                                                <li class="team team-bottom">
+                                                    <select id="ddlL62" class="name">
+                                                        @if (listBet.Count <= 0)
+                                                        {
+                                                            <option value="-1">-- Seleccione --</option>}
+                                                        @if (idTeam2 != 0)
+                                                        {
+                                                            foreach (var team in listTeam.Where(t => t.ID_TEAM == idTeam2))
+                                                            {
+
+                                                                <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                            }
+                                                        }
+                                                    </select><input type="text" value="@point2" class="score">
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        @if (DateTime.Now
+< finishDateTime && listBet.Count <= 0)
+                                        {<!-- END ROUND ONE -->
+                                            <div class="ct-cta hidden-min450">
+                                                <a id="btnGuardar" href="" class="cta">ENVIAR</a>
+                                            </div>
+                                        }
+                                    </div>
+                                    <div class="split split-two">
+                                        <div class="round round-three">
+                                            <div class="round-details green">Semifinal</div>
+                                            <div class="flex-mobile">
+                                                <ul class="matchup matchup-red">
+                                                    <li class="team team-top">
+                                                        <select id="ddlW50" class="name">
+                                                            @if (listBet.Count <= 0)
+                                                            {
+                                                                <option value="-1">-- Seleccione --</option>}
+                                                            @{
+
+                                                                lTeam = listBet.FirstOrDefault(b => b.ID_MATCH == 24);
+                                                                if (lTeam != null)
+                                                                {
+                                                                    idTeam = lTeam.ID_TEAM_1;
+                                                                    idTeam2 = lTeam.ID_TEAM_2;
+                                                                    point1 = lTeam.POINTS_TEAM_1 ?? 0;
+                                                                    point2 = lTeam.POINTS_TEAM_2 ?? 0;
+                                                                }
+
+                                                                if (idTeam != 0)
+                                                                {
+                                                                    foreach (var team in listTeam.Where(t => t.ID_TEAM == idTeam))
+                                                                    {
+
+                                                                        <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                    }
+                                                                }
+
+                                                            }
+
+                                                        </select><input type="text" value="@point1" class="score">
+                                                    </li>
+                                                    <span class="vs">VS</span>
+                                                    <li class="team team-bottom">
+                                                        <select id="ddlW52" class="name">
+                                                            @if (listBet.Count <= 0)
+                                                            {
+                                                                <option value="-1">-- Seleccione --</option>}
+                                                            @if (idTeam2 != 0)
+                                                            {
+                                                                foreach (var team in listTeam.Where(t => t.ID_TEAM == idTeam2))
+                                                                {
+
+                                                                    <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                }
+                                                            }
+                                                        </select><input type="text" value="@point2" class="score">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="round round-two">
+                                            <div class="round-details purple">Cuartos de Finales</div>
+                                            <div class="flex-mobile">
+                                                <ul class="matchup matchup-blue">
+                                                    <li class="team team-top">
+                                                        <label style="color: white">1C</label>
+                                                        <select id="ddl1B" class="name name2">
+                                                            @if (listBet.Count <= 0)
+                                                            {
+                                                                <option value="-1">-- Seleccione --</option>}
+                                                            @{
+
+                                                                lTeam = listBet.FirstOrDefault(b => b.ID_MATCH == 21);
+                                                                if (lTeam != null)
+                                                                {
+                                                                    idTeam = lTeam.ID_TEAM_1;
+                                                                    idTeam2 = lTeam.ID_TEAM_2;
+                                                                    point1 = lTeam.POINTS_TEAM_1 ?? 0;
+                                                                    point2 = lTeam.POINTS_TEAM_2 ?? 0;
+                                                                }
+
+                                                                if (idTeam == 0)
+                                                                {
+                                                                    foreach (var team in listTeam.Where(t => t.GROUP_TEAM == "C"))
+                                                                    {
+
+                                                                        <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                    }
+                                                                }
+                                                                else
+                                                                {
+                                                                    foreach (var team in listTeam.Where(t => t.ID_TEAM == idTeam))
+                                                                    {
+
+                                                                        <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                    }
+                                                                }
+                                                            }
+                                                        </select><input type="text" value="@point1" class="score score2">
+                                                    </li>
+                                                    <span class="vs">VS</span>
+                                                    <li class="team team-bottom">
+                                                        <label style="width: 40px; display: inline-block;">3B/C</label>
+                                                        <select id="ddl2A" class="name name2" style="width: 58%">
+                                                            @if (listBet.Count <= 0)
+                                                            {
+                                                                <option value="-1">-- Seleccione --</option>}
+                                                            @if (idTeam2 == 0)
+                                                            {
+                                                                foreach (var team in listTeam.Where(t => t.GROUP_TEAM == "A" || t.GROUP_TEAM == "B"))
+                                                                {
+
+                                                                    <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                }
+                                                            }
+                                                            else
+                                                            {
+                                                                foreach (var team in listTeam.Where(t => t.ID_TEAM == idTeam2))
+                                                                {
+
+                                                                    <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                }
+                                                            }
+                                                        </select><input type="text" value="@point2" class="score score2">
+                                                    </li>
+                                                </ul>
+                                                <ul class="matchup matchup-blue">
+                                                    <li class="team team-top">
+                                                        <label style="color: white">1B</label>
+                                                        <select id="ddl1D" class="name name2">
+                                                            @if (listBet.Count <= 0)
+                                                            {
+                                                                <option value="-1">-- Seleccione --</option>}
+                                                            @{
+
+                                                                lTeam = listBet.FirstOrDefault(b => b.ID_MATCH == 22);
+                                                                if (lTeam != null)
+                                                                {
+                                                                    idTeam = lTeam.ID_TEAM_1;
+                                                                    idTeam2 = lTeam.ID_TEAM_2;
+                                                                    point1 = lTeam.POINTS_TEAM_1 ?? 0;
+                                                                    point2 = lTeam.POINTS_TEAM_2 ?? 0;
+                                                                }
+
+                                                                if (idTeam == 0)
+                                                                {
+                                                                    foreach (var team in listTeam.Where(t => t.GROUP_TEAM == "B"))
+                                                                    {
+
+                                                                        <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                    }
+                                                                }
+                                                                else
+                                                                {
+                                                                    foreach (var team in listTeam.Where(t => t.ID_TEAM == idTeam))
+                                                                    {
+
+                                                                        <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                    }
+                                                                }
+                                                            }
+                                                        </select><input type="text" value="@point1" class="score score2">
+                                                    </li>
+                                                    <span class="vs">VS</span>
+                                                    <li class="team team-bottom">
+                                                        <label style="color: white">2C</label>
+                                                        <select id="ddl2C" class="name name2">
+                                                            @if (listBet.Count <= 0)
+                                                            {
+                                                                <option value="-1">-- Seleccione --</option>}
+                                                            @if (idTeam2 == 0)
+                                                            {
+                                                                foreach (var team in listTeam.Where(t => t.GROUP_TEAM == "C"))
+                                                                {
+
+                                                                    <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                }
+                                                            }
+                                                            else
+                                                            {
+                                                                foreach (var team in listTeam.Where(t => t.ID_TEAM == idTeam2))
+                                                                {
+
+                                                                    <option value="@team.ID_TEAM">@team.NAME_TEAM</option>
+                                                                }
+                                                            }
+                                                        </select><input type="text" value="@point2" class="score score2">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="groups">
+                                        <div class="group group-a">
+                                            <div class="group-top">
+                                                <p>- Grupo A -</p>
+                                            </div>
+                                            <div class="group-teams">
+
+                                                @foreach (var team in listTeam.Where(t => t.GROUP_TEAM == "A"))
+                                                {
+                                                    <p><span>@team.NAME_TEAM</span> <img src="@Url.Content("~/ContentCAmerica/resources/assets/images/flags/" + @team.LOGO_TEAM)" alt=""></p>
+                                                }
+
+                                            </div>
+                                        </div>
+                                        <div class="group group-b">
+                                            <div class="group-top">
+                                                <p>- Grupo B -</p>
+                                            </div>
+                                            <div class="group-teams">
+
+                                                @foreach (var team in listTeam.Where(t => t.GROUP_TEAM == "B"))
+                                                {
+                                                    <p><span>@team.NAME_TEAM</span> <img src="@Url.Content("~/ContentCAmerica/resources/assets/images/flags/" + @team.LOGO_TEAM)" alt=""></p>
+                                                }
+
+                                            </div>
+                                        </div>
+                                        <div class="group group-c">
+                                            <div class="group-top">
+                                                <p>- Grupo C -</p>
+                                            </div>
+                                            <div class="group-teams">
+                                                @foreach (var team in listTeam.Where(t => t.GROUP_TEAM == "C"))
+                                                {
+                                                    <p><span>@team.NAME_TEAM</span> <img src="@Url.Content("~/ContentCAmerica/resources/assets/images/flags/" + @team.LOGO_TEAM)" alt=""></p>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="alerta">
+        <div class="alertint"><a class="cerraralerta">X</a> <span class="textalert"></span></div>
+    </div>
+    <footer>
+        <div class="content-footer">
+            <img src="resources/assets/images/logo_footer.png" alt="">
+            <div class="redes">
+                <a href="#"><img src="~/ContentCAmerica/resources/assets/images/fb.png" alt=""> </a>
+                <a href="#"><img src="~/ContentCAmerica/resources/assets/images/ins.png" alt=""> </a>
+                <a href="#"><img src="~/ContentCAmerica/resources/assets/images/tw.png" alt=""> </a>
+                <a href="#"><img src="~/ContentCAmerica/resources/assets/images/yt.png" alt=""> </a>
+                <a href="#">www.unicentromedellin.com.co</a>
+            </div>
+        </div>
+    </footer>
+    <script src="~/ContentCAmerica/resources/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="~/ContentCAmerica/resources/assets/js/vendor/jquery.bxslider.min.js"></script>
+    <script src="~/ContentCAmerica/resources/assets/js/vendor/jquery-scrolltofixed-min.js"></script>
+    <script src="~/ContentCAmerica/resources/assets/js/app/app.app-min.js"></script>
+
+
+    <script>
+        $( document ).ready(function() {
+                @if (DateTime.Now > finishDateTime || listBet.Count > 0)
+            {
+                @Html.Raw("$('select').attr('disabled', 'disabled');")
+            }
+                 @if (DateTime.Now > finishDateTime && listBet.Count == 0)
+            {
+                @Html.Raw("alert('Fecha límite de registro de apuestas ya finalizo');")
+
+                }
+            });
+
+    </script>
+    @*<script src="@Url.Content(" ~/Content/js/develop1.js ")"></script>*@
+    <script src="~/Content/js/develop1.js"></script>
+</body>
+</html>

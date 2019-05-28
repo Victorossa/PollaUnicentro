@@ -106,7 +106,7 @@ namespace Big.Unicentro.Unipolla.UI.Controllers
                         else
                         {
                             objResponse.Result = false;
-                            objResponse.Message = new ClsMessage { Message = "validar el código ingresado,éste no es correcto." };
+                            objResponse.Message = new ClsMessage { Message = "Validar el código ingresado, éste no es correcto." };
                         }
 
                     }
@@ -163,7 +163,7 @@ namespace Big.Unicentro.Unipolla.UI.Controllers
                             if (countCodesWinnerClient >= 3 || countCodesWinnerEmployee >= 1 || isEmployee)
                             {
                                 objResponse.Result = false;
-                                objResponse.Message = new ClsMessage { Message = "El usuario " + document + ", ya alcanzó el limite de participaciones permitidas." };
+                                objResponse.Message = new ClsMessage { Message = "El usuario " + document + ", ya alcanzó el límite de participaciones permitidas." };
                             }
                             else
                             {
@@ -215,13 +215,13 @@ namespace Big.Unicentro.Unipolla.UI.Controllers
                 else
                 {
                     objResponse.Result = false;
-                    objResponse.Message = new ClsMessage { Message = "validar el código ingresado,éste no es correcto." };
+                    objResponse.Message = new ClsMessage { Message = "Validar el código ingresado, éste no es correcto." };
                 }
             }
             else
             {
                 objResponse.Result = false;
-                objResponse.Message = new ClsMessage { Message = "Existe mas de Un Torneo Activado o No hay ninguno, Favor Verificar" };
+                objResponse.Message = new ClsMessage { Message = "Existe más de Un Torneo Activado o No hay ninguno, Favor Verificar" };
             }
 
             try
@@ -232,7 +232,7 @@ namespace Big.Unicentro.Unipolla.UI.Controllers
             {
                 ExceptionLogging.LogException(ex);
                 objResponse.Result = false;
-                objResponse.Message = new ClsMessage { Message = "Se presento un error consultando la informacion." };
+                objResponse.Message = new ClsMessage { Message = "Se presentó un error consultando la información." };
 
             }
 

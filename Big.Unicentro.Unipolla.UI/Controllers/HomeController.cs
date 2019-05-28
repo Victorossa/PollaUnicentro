@@ -21,14 +21,14 @@ namespace Big.Unicentro.Unipolla.UI.Controllers
         public ActionResult Index()
         {
             ClsResponse<int> TournamentsID = TournamentBLL.GetTournamentID();
-           
+
             ClsResponse<List<UNIPOLLA_TEAM>> objTeams = MatchBLL.GetTeams(TournamentsID.Result);
             ClsResponse<List<UNIPOLLA_BET>> objBets = BetBLL.GetBets(SessionHelper.IdCurrentCodesWinner);
             ClsResponse<List<UNIPOLLA_TOURNAMENT>> Tournaments = TournamentBLL.GetTournamentsList();
             ViewBag.fechaLimite = Tournaments.Result.FirstOrDefault().REGISTRATION_DEADLINE;
 
 
-                ViewBag.Teams = objTeams.Result;
+            ViewBag.Teams = objTeams.Result;
             if (objBets.Result == null)
             {
                 objBets.Result = new List<UNIPOLLA_BET>();
@@ -44,10 +44,6 @@ namespace Big.Unicentro.Unipolla.UI.Controllers
             if (TournamentsID.Result == 2)
             {
                 return View("CAmerica2");
-            }
-            if (TournamentsID.Result == 3)
-            {
-                return View("CCorto");
             }
 
             return View();
@@ -126,14 +122,14 @@ namespace Big.Unicentro.Unipolla.UI.Controllers
                 else
                 {
                     objResponse.Result = false;
-                    objResponse.Message = new ClsMessage { Message = "La fecha limite para registrar ya acabó." };
+                    objResponse.Message = new ClsMessage { Message = "La fecha límite para registrar ya acabó." };
                 }
             }
             catch (Exception ex)
             {
                 ExceptionLogging.LogException(ex);
                 objResponse.Result = false;
-                objResponse.Message = new ClsMessage { Message = "Se presento un error guardando la informacion." };
+                objResponse.Message = new ClsMessage { Message = "Se presentó un error guardando la información." };
 
             }
 
@@ -144,6 +140,42 @@ namespace Big.Unicentro.Unipolla.UI.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+        public ActionResult unipollacopamundial()
+        {
+            return View();
+        }
+
+        public ActionResult unipollacopaamerica()
+        {
+            ClsResponse<int> TournamentsID = TournamentBLL.GetTournamentID();
+
+            ClsResponse<List<UNIPOLLA_TEAM>> objTeams = MatchBLL.GetTeams(TournamentsID.Result);
+            ClsResponse<List<UNIPOLLA_BET>> objBets = BetBLL.GetBets(SessionHelper.IdCurrentCodesWinner);
+            ClsResponse<List<UNIPOLLA_TOURNAMENT>> Tournaments = TournamentBLL.GetTournamentsList();
+            ViewBag.fechaLimite = Tournaments.Result.FirstOrDefault().REGISTRATION_DEADLINE;
+
+
+            ViewBag.Teams = objTeams.Result;
+            if (objBets.Result == null)
+            {
+                objBets.Result = new List<UNIPOLLA_BET>();
+            }
+            ViewBag.Bets = objBets.Result;
+
+
+
+            if (TournamentsID.Result == 1)
+            {
+                return View("CMundial");
+            }
+            if (TournamentsID.Result == 2)
+            {
+                return View("CAmerica2");
+            }
 
             return View();
         }

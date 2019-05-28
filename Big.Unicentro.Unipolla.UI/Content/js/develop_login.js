@@ -9,7 +9,7 @@ $("#btnEnviar").click(function (event) {
 
     if (!ValidateFormLogin()) {
 
-        alert(" debes completar el formulario para poder continuar.");
+        alert(" Debes completar el formulario para poder continuar.");
 
     } else {
         $.ajax({
@@ -23,7 +23,7 @@ $("#btnEnviar").click(function (event) {
                 beforeSend: function() { $("#spinner").fadeIn("slow"); },
                 error: function(data) {
                     $("#spinner").fadeOut("slow");
-                    alert("Ocurrio un error por favor intentelo de nuevo " + data, "");
+                    alert("Ocurrió un error por favor inténtelo de nuevo " + data, "");
                 },
             })
             .done(function(data) {

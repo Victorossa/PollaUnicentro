@@ -344,7 +344,7 @@ $("#btnGuardar").click(function (event) {
 
     if (!ValidateFormBet()) {
 
-        alert("debes completar el formulario para poder continuar.");
+        alert("Debes completar el formulario para poder continuar.");
 
     } else {
         $.ajax({
@@ -355,7 +355,7 @@ $("#btnGuardar").click(function (event) {
             beforeSend: function () { $("#spinner").fadeIn("slow"); },
             error: function (data) {
                 $("#spinner").fadeOut("slow");
-                alert('Se presentó un error, intentelo nuevamente.');
+                alert('Se presentó un error, inténtelo nuevamente.');
             },
         })
             .done(function (data) {

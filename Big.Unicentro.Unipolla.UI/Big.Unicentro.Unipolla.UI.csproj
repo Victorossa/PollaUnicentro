@@ -384,13 +384,13 @@
     <Content Include="Views\Shared\Terms.cshtml" />
     <Content Include="Views\Home\Mudial.cshtml" />
     <Content Include="Views\Home\CAmerica.cshtml" />
-    <Content Include="Views\Home\CCorto.cshtml" />
     <Content Include="Views\Home\CMundial.cshtml" />
     <Content Include="Views\Shared\_Footer2.cshtml" />
     <Content Include="Views\Shared\_Footer3.cshtml" />
     <Content Include="Views\Account\loginCAmerica.cshtml" />
     <Content Include="Views\Shared\TermsCAmerica.cshtml" />
     <Content Include="Views\Home\CAmerica2.cshtml" />
+    <Content Include="Views\Home\unipollacopaamerica.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
