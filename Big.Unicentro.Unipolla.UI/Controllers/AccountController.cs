@@ -187,9 +187,20 @@ namespace Big.Unicentro.Unipolla.UI.Controllers
 
                                 if (codes.Result)
                                 {
-                                    SessionHelper.IdCurrentCustomer = idPersonClient;
-                                    SessionHelper.IdCurrentCodesWinner = codeWinnerPerson.GUID;
-                                    FormsAuthentication.SetAuthCookie(idPersonClient, false);
+                                   if(!string.IsNullOrEmpty(idPersonClient))
+                                    {
+                                        SessionHelper.IdCurrentCustomer = idPersonClient;
+                                        SessionHelper.IdCurrentCodesWinner = codeWinnerPerson.GUID;
+                                        FormsAuthentication.SetAuthCookie(idPersonClient, false);
+                                    }
+                                    else
+                                    {
+                                        SessionHelper.IdCurrentCustomer = idPersonEmployee;
+                                        SessionHelper.IdCurrentCodesWinner = codeWinnerPerson.GUID;
+                                        FormsAuthentication.SetAuthCookie(idPersonEmployee, false);
+                                    }
+                                       
+                                  
 
                                     objResponse.Result = true;
                                 }
